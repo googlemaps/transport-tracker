@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>LOCATION_REQUEST_INTERVAL</key>
+        <value>10000</value>
+    </entry>
+    <entry>
+        <key>LOCATION_REQUEST_INTERVAL_FASTEST</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>LOCATION_MIN_DISTANCE_CHANGED</key>
+        <value>20</value>
+    </entry>
+    <entry>
+        <key>MAX_STATUSES</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>SLEEP_HOUR_OF_DAY</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>SLEEP_HOURS_DURATION</key>
+        <value>4</value>
+    </entry>
+</defaultsMap>

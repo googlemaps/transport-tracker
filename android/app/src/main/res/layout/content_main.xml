@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rootView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.google.transporttracker.TrackerActivity"
+                tools:showIn="@layout/content_main">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/water"/>
+
+    <ImageView
+        android:id="@+id/imageCloud1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="32dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cloud"/>
+
+
+    <ImageView
+        android:id="@+id/imageCloud2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="32dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cloud"/>
+
+    <ImageView
+        android:id="@+id/imageCloud3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/card_view"
+        android:layout_toLeftOf="@+id/card_view"
+        android:paddingTop="24dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cloud"/>
+
+    <ImageView
+        android:id="@+id/imageCloud4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/card_view"
+        android:layout_toRightOf="@+id/card_view"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cloud"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/card_background"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/textPrimary"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textPrimary"
+                android:textColorHighlight="@color/textPrimary"
+                android:textColorHint="@color/textPrimary"
+                android:textColorLink="@color/textPrimary"/>
+
+            <TextView
+                android:id="@+id/permissionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/textPrimary"
+                android:text="@string/location_permissions_required"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/textPrimary"
+                android:textColorHighlight="@color/textPrimary"
+                android:textColorHint="@color/textPrimary"
+                android:textColorLink="@color/textPrimary"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/transport_id"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/permissionText"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/textPrimary"
+                android:hint="@string/enter_transport_id"
+                android:maxLines="1"
+                android:textColor="@color/textPrimary"
+                android:textColorHighlight="@color/textPrimary"
+                android:textColorHint="@color/io_accent5"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transport_id"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/textPrimary"
+                android:hint="@string/enter_email"
+                android:maxLines="1"
+                android:textColor="@color/textPrimary"
+                android:textColorHighlight="@color/textPrimary"
+                android:textColorHint="@color/io_accent5"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/textPrimary"
+                android:hint="@string/enter_password"
+                android:maxLines="1"
+                android:textColor="@color/textPrimary"
+                android:textColorHighlight="@color/textPrimary"
+                android:textColorHint="@color/io_accent5"/>
+
+            <Button
+                android:id="@+id/button_start"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:text="@string/start_tracking"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

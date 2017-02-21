@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentDark">#AD1457</color>
+    <color name="textPrimary">@color/white</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="card_background">@color/io_main3</color>
+    <color name="switch_on">#00FF00</color>
+    <color name="switch_off">#FF0000</color>
+
+    <!-- I/O color schemes -->
+    <color name="io_main1">#0E9AAD</color>
+    <color name="io_main2">#5D6ABF</color>
+    <color name="io_main3">#445963</color>
+    <color name="io_grays1">#EBEEF0</color>
+    <color name="io_grays2">#AFBDC4</color>
+    <color name="io_accent1">#FF5151</color>
+    <color name="io_accent2">#8CEDEA</color>
+    <color name="io_accent3">#4CCFE0</color>
+    <color name="io_accent4">#7BB241</color>
+    <color name="io_accent5">#FFC927</color>
+    <color name="io_accent6">#7885CA</color>
+
+</resources>

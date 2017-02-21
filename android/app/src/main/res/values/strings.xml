@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Transport Tracker</string>
+    <string name="title_activity_main">Transport Tracker</string>
+    <string name="start_tracking">Start Tracking</string>
+    <string name="stop_tracking">Stop Tracking</string>
+    <string name="enter_transport_id">Enter transport ID</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string
+        name="location_permissions_required">Location permissions are required for tracking
+        location. Please grant these permissions to continue.</string>
+    <string name="missing_inputs">Please enter a transport ID, email and password</string>
+    <string name="tracking">Tracking &#x2713;</string>
+    <string name="not_tracking">Not tracking &#x2718;</string>
+    <string name="connecting">Connecting &#8230;</string>
+    <string name="status">status</string>
+    <string name="location_permission_required">Location permission required.</string>
+    <string name="gps_required">Gps not enabled.</string>
+    <string name="ok">OK</string>
+    <string name="enable">Enable</string>
+    <string name="auth_failed">Firebase authentication failed</string>
+    <string name="confirm_stop">Do you really want to disable location tracking?</string>
+
+    <string name="firebase_path" translatable="false">locations/</string>
+    <string name="prefs" translatable="false">prefs</string>
+    <string name="transport_id" translatable="false">transport_id</string>
+    <string name="email" translatable="false">email</string>
+    <string name="password" translatable="false">password</string>
+</resources>
