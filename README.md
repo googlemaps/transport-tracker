@@ -25,7 +25,7 @@ Firebase database and draws them on the LCD TV.
 
 ## Getting started
 
-Please refer to the REAADME file for each component, for information about
+Please refer to the README file for each component, for information about
 API keys and other setup guides.
 
 ## Directories in this repo
