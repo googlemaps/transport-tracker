@@ -1,0 +1,23 @@
+stop_lon,stop_name,stop_lat,stop_id,location_type
+-121.926683,San José Airport (SJC),37.367254,20,0
+-122.076628,Mountain View Caltrain Station,37.394109,21,0
+-122.164275,Palo Alto Caltrain,37.442909,1,0
+-122.078634,Google I/O,37.4263,0,0
+-122.061057,Hotel Avante,37.376128,3,0
+-122.12266,Hilton Garden Inn Palo Alto,37.409352,2,0
+-122.01318,Wild Palms Hotel,37.352014,5,0
+-122.042868,Grand Hotel,37.370909,4,0
+-122.032659,Cupertino Inn,37.335466,7,0
+-122.001996,The Domain Hotel,37.352522,6,0
+-122.015153,Hilton Garden Inn Cupertino,37.333359,9,0
+-122.014996,Courtyard San Jose Cupertino,37.332686,8,0
+-121.978797,Embassy Suites Santa Clara,37.383781,11,0
+-121.983223,Plaza Suites,37.387002,10,0
+-121.962328,Biltmore Hotel & Suites,37.383605,13,0
+-121.977778,Avatar Hotel,37.392028,12,0
+-121.976529,Aloft Santa Clara,37.417945,15,0
+-122.002131,Country Inn & Suites By Carlson,37.409883,14,0
+-122.408867,The Westin St. Francis SF,37.788203,17,0
+-122.395455,Hyatt Regency SF,37.794075,16,0
+-122.383949,San Francisco Airport (SFO),37.616763,19,0
+-122.385861,Millbrae BART Station,37.600425,18,0

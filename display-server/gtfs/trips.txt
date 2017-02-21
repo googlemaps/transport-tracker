@@ -1,0 +1,848 @@
+route_id,trip_id,trip_headsign,service_id
+0,344,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,3
+0,0,To Shoreline,1
+0,346,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,3
+1,347,To Hotel Avante & Grand Hotel,1
+0,340,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,341,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,342,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,343,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,3
+5,810,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,811,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,812,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,813,To BiltMore Hotel & Suites and Avatar Hotel,0
+1,348,To Hotel Avante & Grand Hotel,1
+1,349,To Hotel Avante & Grand Hotel,1
+5,816,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,817,To BiltMore Hotel & Suites and Avatar Hotel,0
+8,595,"Hyatt Regency Embarcadero, via Millbrae BART",1
+3,719,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,718,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,717,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+1,716,To Hotel Avante & Grand Hotel,0
+1,715,To Hotel Avante & Grand Hotel,0
+1,714,To Hotel Avante & Grand Hotel,0
+1,713,To Hotel Avante & Grand Hotel,0
+1,712,To Hotel Avante & Grand Hotel,0
+1,711,To Hotel Avante & Grand Hotel,0
+1,710,To Hotel Avante & Grand Hotel,0
+8,606,"Hyatt Regency Embarcadero, via Millbrae BART",2
+8,594,"Hyatt Regency Embarcadero, via Millbrae BART",1
+3,736,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+9,619,"Westin St. Francis, via Millbrae BART",2
+7,298,To Shoreline,3
+7,299,To Mountain View Caltrain,3
+7,296,To Shoreline,3
+7,297,To Shoreline,3
+7,294,To Shoreline,3
+7,295,To Shoreline,3
+7,292,To Shoreline,3
+7,293,To Shoreline,3
+7,290,To Shoreline,3
+7,291,To Shoreline,3
+8,591,"Hyatt Regency Embarcadero, via Millbrae BART",1
+8,590,"Hyatt Regency Embarcadero, via Millbrae BART",1
+8,593,"Hyatt Regency Embarcadero, via Millbrae BART",1
+8,592,"Hyatt Regency Embarcadero, via Millbrae BART",1
+8,199,To Shoreline,1
+10,198,To Shoreline,3
+8,597,"Hyatt Regency Embarcadero, via Millbrae BART",2
+8,596,"Hyatt Regency Embarcadero, via Millbrae BART",1
+10,195,To Shoreline,2
+10,194,To Shoreline,1
+10,197,To Shoreline,3
+10,196,To Shoreline,2
+6,191,To Shoreline,3
+6,190,To Shoreline,3
+10,193,To Shoreline,1
+6,192,To Shoreline,3
+7,270,To Shoreline,2
+7,271,To Shoreline,2
+7,272,To Shoreline,2
+7,273,To Shoreline,2
+7,274,To Mountain View Caltrain,2
+7,275,To Mountain View Caltrain,2
+7,276,To Mountain View Caltrain,2
+7,277,To Mountain View Caltrain,2
+7,278,To Mountain View Caltrain,2
+7,279,To Mountain View Caltrain,2
+3,738,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+5,524,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,525,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,526,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,527,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,520,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,521,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,522,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,523,To BiltMore Hotel & Suites and Avatar Hotel,1
+8,599,"Hyatt Regency Embarcadero, via Millbrae BART",2
+5,528,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,529,To BiltMore Hotel & Suites and Avatar Hotel,2
+6,449,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,448,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,443,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,442,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,441,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,440,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,447,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,446,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,445,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,444,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+3,108,To Shoreline,3
+3,109,To Shoreline,3
+3,102,To Shoreline,1
+3,103,To Shoreline,2
+3,100,To Shoreline,3
+3,101,To Shoreline,1
+3,106,To Shoreline,3
+3,107,To Shoreline,3
+3,104,To Shoreline,2
+3,105,To Shoreline,2
+0,39,To Shoreline,3
+0,38,To Shoreline,3
+0,33,To Shoreline,2
+0,32,To Shoreline,2
+0,31,To Shoreline,2
+0,30,To Shoreline,2
+0,37,To Shoreline,3
+0,36,To Shoreline,3
+0,35,To Shoreline,3
+0,34,To Shoreline,3
+7,641,Mountain View Caltrain Loop,0
+7,640,Mountain View Caltrain Loop,0
+7,643,Mountain View Caltrain Loop,0
+7,642,Mountain View Caltrain Loop,0
+7,645,Mountain View Caltrain Loop,0
+7,644,Mountain View Caltrain Loop,0
+6,438,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,439,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,436,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,437,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,434,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,435,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,432,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,433,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,430,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,431,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+0,339,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,338,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,335,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,334,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,337,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,336,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,331,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,330,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,333,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,332,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+6,744,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+6,745,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+5,818,To BiltMore Hotel & Suites and Avatar Hotel,0
+0,345,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,3
+6,748,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+0,6,To Shoreline,2
+3,99,To Shoreline,3
+3,98,To Shoreline,3
+2,844,To The Domain Hotel & Wild Palms Hotel,0
+3,91,To Shoreline,2
+3,90,To Shoreline,1
+3,93,To Shoreline,2
+3,92,To Shoreline,2
+3,95,To Shoreline,3
+3,94,To Shoreline,2
+3,97,To Shoreline,3
+3,96,To Shoreline,3
+5,814,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,815,To BiltMore Hotel & Suites and Avatar Hotel,0
+3,740,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,741,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,742,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+6,743,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+2,559,To The Domain Hotel & Wild Palms Hotel,1
+2,558,To The Domain Hotel & Wild Palms Hotel,1
+6,746,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+6,747,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+2,555,To The Domain Hotel & Wild Palms Hotel,1
+2,554,To The Domain Hotel & Wild Palms Hotel,1
+2,557,To The Domain Hotel & Wild Palms Hotel,1
+2,556,To The Domain Hotel & Wild Palms Hotel,1
+2,551,To The Domain Hotel & Wild Palms Hotel,1
+2,550,To The Domain Hotel & Wild Palms Hotel,1
+2,553,To The Domain Hotel & Wild Palms Hotel,1
+2,552,To The Domain Hotel & Wild Palms Hotel,1
+7,238,To Shoreline,1
+7,239,To Shoreline,1
+7,234,To Shoreline,1
+7,235,To Shoreline,1
+7,236,To Shoreline,1
+7,237,To Shoreline,1
+7,230,To Shoreline,1
+7,231,To Shoreline,1
+7,232,To Shoreline,1
+7,233,To Shoreline,1
+0,1,To Shoreline,1
+9,614,"Westin St. Francis, via Millbrae BART",1
+5,146,To Shoreline,1
+5,147,To Shoreline,2
+5,144,To Shoreline,1
+5,145,To Shoreline,1
+4,142,To Shoreline,3
+4,143,To Shoreline,3
+4,140,To Shoreline,3
+4,141,To Shoreline,3
+9,612,"Westin St. Francis, via Millbrae BART",1
+9,613,"Westin St. Francis, via Millbrae BART",1
+9,610,"Westin St. Francis, via Millbrae BART",1
+9,611,"Westin St. Francis, via Millbrae BART",1
+9,616,"Westin St. Francis, via Millbrae BART",1
+9,617,"Westin St. Francis, via Millbrae BART",1
+5,148,To Shoreline,2
+5,149,To Shoreline,2
+6,768,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+0,689,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,688,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,685,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,684,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,687,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,686,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,681,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,680,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,683,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,682,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+9,623,"Westin St. Francis, via Millbrae BART",2
+5,819,To BiltMore Hotel & Suites and Avatar Hotel,0
+9,622,"Westin St. Francis, via Millbrae BART",2
+4,133,To Shoreline,3
+4,132,To Shoreline,3
+4,131,To Shoreline,3
+4,130,To Shoreline,3
+4,137,To Shoreline,2
+4,136,To Shoreline,1
+4,135,To Shoreline,1
+4,134,To Shoreline,1
+4,494,To Plaza Suites & Embassy Suites Santa Clara,2
+4,495,To Plaza Suites & Embassy Suites Santa Clara,2
+4,139,To Shoreline,2
+4,138,To Shoreline,2
+4,490,To Plaza Suites & Embassy Suites Santa Clara,2
+4,491,To Plaza Suites & Embassy Suites Santa Clara,2
+4,492,To Plaza Suites & Embassy Suites Santa Clara,2
+4,493,To Plaza Suites & Embassy Suites Santa Clara,2
+0,24,To Shoreline,3
+0,25,To Shoreline,3
+0,26,To Shoreline,3
+0,27,To Shoreline,1
+0,20,To Shoreline,3
+0,21,To Shoreline,3
+0,22,To Shoreline,3
+0,23,To Shoreline,3
+0,28,To Shoreline,1
+0,29,To Shoreline,1
+3,407,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,406,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,405,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,404,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,403,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,402,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,401,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,400,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+11,629,San Francisco International Airport,3
+3,409,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,408,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+9,628,"Westin St. Francis, via Millbrae BART",3
+6,758,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+1,379,To Hotel Avante & Grand Hotel,2
+1,378,To Hotel Avante & Grand Hotel,2
+2,829,To The Domain Hotel & Wild Palms Hotel,0
+2,828,To The Domain Hotel & Wild Palms Hotel,0
+1,371,To Hotel Avante & Grand Hotel,2
+1,370,To Hotel Avante & Grand Hotel,2
+1,373,To Hotel Avante & Grand Hotel,2
+1,372,To Hotel Avante & Grand Hotel,2
+1,375,To Hotel Avante & Grand Hotel,2
+1,374,To Hotel Avante & Grand Hotel,2
+1,377,To Hotel Avante & Grand Hotel,2
+1,376,To Hotel Avante & Grand Hotel,2
+1,708,To Hotel Avante & Grand Hotel,0
+1,709,To Hotel Avante & Grand Hotel,0
+1,704,To Hotel Avante & Grand Hotel,0
+1,705,To Hotel Avante & Grand Hotel,0
+1,706,To Hotel Avante & Grand Hotel,0
+1,707,To Hotel Avante & Grand Hotel,0
+1,700,To Hotel Avante & Grand Hotel,0
+9,618,"Westin St. Francis, via Millbrae BART",2
+1,702,To Hotel Avante & Grand Hotel,0
+1,703,To Hotel Avante & Grand Hotel,0
+3,393,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,392,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,88,To Shoreline,1
+3,89,To Shoreline,1
+3,397,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,396,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,395,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,394,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+2,82,To Shoreline,2
+2,83,To Shoreline,3
+2,80,To Shoreline,2
+2,81,To Shoreline,2
+2,86,To Shoreline,3
+2,87,To Shoreline,3
+2,84,To Shoreline,3
+2,85,To Shoreline,3
+5,797,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,796,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,795,To BiltMore Hotel & Suites and Avatar Hotel,0
+4,794,To Plaza Suites & Embassy Suites Santa Clara,0
+4,793,To Plaza Suites & Embassy Suites Santa Clara,0
+4,792,To Plaza Suites & Embassy Suites Santa Clara,0
+4,791,To Plaza Suites & Embassy Suites Santa Clara,0
+4,790,To Plaza Suites & Embassy Suites Santa Clara,0
+5,799,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,798,To BiltMore Hotel & Suites and Avatar Hotel,0
+0,7,To Shoreline,2
+8,601,"Hyatt Regency Embarcadero, via Millbrae BART",2
+8,607,"Hyatt Regency Embarcadero, via Millbrae BART",3
+2,586,To The Domain Hotel & Wild Palms Hotel,3
+8,587,"Hyatt Regency Embarcadero, via Millbrae BART",1
+2,584,To The Domain Hotel & Wild Palms Hotel,3
+2,585,To The Domain Hotel & Wild Palms Hotel,3
+2,582,To The Domain Hotel & Wild Palms Hotel,2
+2,583,To The Domain Hotel & Wild Palms Hotel,3
+2,580,To The Domain Hotel & Wild Palms Hotel,2
+2,581,To The Domain Hotel & Wild Palms Hotel,2
+8,588,"Hyatt Regency Embarcadero, via Millbrae BART",1
+8,589,"Hyatt Regency Embarcadero, via Millbrae BART",1
+7,245,To Mountain View Caltrain,1
+7,244,To Mountain View Caltrain,1
+7,247,To Mountain View Caltrain,1
+7,246,To Mountain View Caltrain,1
+7,241,To Shoreline,1
+7,240,To Shoreline,1
+7,243,To Mountain View Caltrain,1
+7,242,To Mountain View Caltrain,1
+9,615,"Westin St. Francis, via Millbrae BART",1
+7,249,To Mountain View Caltrain,1
+7,248,To Mountain View Caltrain,1
+5,519,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,518,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,511,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,510,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,513,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,512,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,515,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,514,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,517,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,516,To BiltMore Hotel & Suites and Avatar Hotel,1
+6,458,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,459,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+9,621,"Westin St. Francis, via Millbrae BART",2
+9,620,"Westin St. Francis, via Millbrae BART",2
+9,627,"Westin St. Francis, via Millbrae BART",2
+9,626,"Westin St. Francis, via Millbrae BART",2
+9,625,"Westin St. Francis, via Millbrae BART",2
+9,624,"Westin St. Francis, via Millbrae BART",2
+6,450,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,451,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,452,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,453,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,454,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,455,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,456,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,457,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,179,To Shoreline,3
+6,178,To Shoreline,3
+6,177,To Shoreline,3
+6,176,To Shoreline,3
+6,175,To Shoreline,2
+6,174,To Shoreline,2
+6,173,To Shoreline,2
+6,172,To Shoreline,2
+6,171,To Shoreline,1
+6,170,To Shoreline,1
+7,656,Mountain View Caltrain Loop,0
+7,657,Mountain View Caltrain Loop,0
+7,654,Mountain View Caltrain Loop,0
+7,253,To Mountain View Caltrain,1
+6,182,To Shoreline,1
+6,183,To Shoreline,1
+6,180,To Shoreline,3
+6,181,To Shoreline,1
+6,186,To Shoreline,2
+6,187,To Shoreline,2
+6,184,To Shoreline,2
+6,185,To Shoreline,2
+7,652,Mountain View Caltrain Loop,0
+6,188,To Shoreline,3
+6,189,To Shoreline,3
+7,658,Mountain View Caltrain Loop,0
+7,653,Mountain View Caltrain Loop,0
+7,650,Mountain View Caltrain Loop,0
+7,651,Mountain View Caltrain Loop,0
+6,764,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+0,11,To Shoreline,2
+0,10,To Shoreline,2
+0,13,To Shoreline,2
+0,12,To Shoreline,2
+0,15,To Shoreline,2
+0,14,To Shoreline,2
+0,17,To Shoreline,3
+0,16,To Shoreline,3
+0,19,To Shoreline,3
+0,18,To Shoreline,3
+7,659,Mountain View Caltrain Loop,0
+6,753,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+2,831,To The Domain Hotel & Wild Palms Hotel,0
+6,752,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+1,62,To Shoreline,3
+6,756,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+5,809,To BiltMore Hotel & Suites and Avatar Hotel,0
+0,322,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,323,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,320,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,321,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,326,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,327,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,324,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,325,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,328,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+0,329,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,2
+6,759,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+8,201,To Shoreline,1
+8,200,To Shoreline,1
+8,203,To Shoreline,2
+8,202,To Shoreline,1
+8,205,To Shoreline,2
+8,204,To Shoreline,2
+8,207,To Shoreline,3
+8,206,To Shoreline,2
+8,209,To Shoreline,3
+8,208,To Shoreline,3
+4,779,To Plaza Suites & Embassy Suites Santa Clara,0
+4,778,To Plaza Suites & Embassy Suites Santa Clara,0
+2,77,To Shoreline,1
+2,76,To Shoreline,3
+2,75,To Shoreline,3
+2,74,To Shoreline,3
+2,73,To Shoreline,3
+2,72,To Shoreline,3
+2,71,To Shoreline,2
+2,70,To Shoreline,2
+7,655,Mountain View Caltrain Loop,0
+2,79,To Shoreline,1
+2,78,To Shoreline,1
+0,2,To Shoreline,1
+5,805,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,804,To BiltMore Hotel & Suites and Avatar Hotel,0
+0,669,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,668,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,667,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,666,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,665,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+7,664,Mountain View Caltrain Loop,0
+7,663,Mountain View Caltrain Loop,0
+7,662,Mountain View Caltrain Loop,0
+7,661,Mountain View Caltrain Loop,0
+7,660,Mountain View Caltrain Loop,0
+4,769,To Plaza Suites & Embassy Suites Santa Clara,0
+1,692,To Hotel Avante & Grand Hotel,0
+1,693,To Hotel Avante & Grand Hotel,0
+0,690,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+1,691,To Hotel Avante & Grand Hotel,0
+1,696,To Hotel Avante & Grand Hotel,0
+1,697,To Hotel Avante & Grand Hotel,0
+1,694,To Hotel Avante & Grand Hotel,0
+1,695,To Hotel Avante & Grand Hotel,0
+1,698,To Hotel Avante & Grand Hotel,0
+1,699,To Hotel Avante & Grand Hotel,0
+5,542,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,543,To BiltMore Hotel & Suites and Avatar Hotel,3
+5,540,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,541,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,546,To BiltMore Hotel & Suites and Avatar Hotel,3
+2,547,To The Domain Hotel & Wild Palms Hotel,1
+5,544,To BiltMore Hotel & Suites and Avatar Hotel,3
+5,545,To BiltMore Hotel & Suites and Avatar Hotel,3
+0,8,To Shoreline,2
+2,548,To The Domain Hotel & Wild Palms Hotel,1
+2,549,To The Domain Hotel & Wild Palms Hotel,1
+2,68,To Shoreline,1
+8,598,"Hyatt Regency Embarcadero, via Millbrae BART",2
+4,120,To Shoreline,1
+4,121,To Shoreline,1
+4,122,To Shoreline,1
+4,123,To Shoreline,1
+4,124,To Shoreline,2
+4,125,To Shoreline,2
+4,126,To Shoreline,2
+4,127,To Shoreline,2
+4,128,To Shoreline,3
+4,129,To Shoreline,3
+6,765,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+3,414,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,415,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,416,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,417,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,410,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,411,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,412,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,413,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+4,498,To Plaza Suites & Embassy Suites Santa Clara,2
+3,418,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,419,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+4,776,To Plaza Suites & Embassy Suites Santa Clara,0
+4,499,To Plaza Suites & Embassy Suites Santa Clara,2
+0,319,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,318,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,313,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,312,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,311,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,310,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,317,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,316,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,315,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,314,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+4,496,To Plaza Suites & Embassy Suites Santa Clara,2
+2,832,To The Domain Hotel & Wild Palms Hotel,0
+2,833,To The Domain Hotel & Wild Palms Hotel,0
+2,830,To The Domain Hotel & Wild Palms Hotel,0
+4,497,To Plaza Suites & Embassy Suites Santa Clara,2
+2,836,To The Domain Hotel & Wild Palms Hotel,0
+2,837,To The Domain Hotel & Wild Palms Hotel,0
+2,834,To The Domain Hotel & Wild Palms Hotel,0
+2,835,To The Domain Hotel & Wild Palms Hotel,0
+2,838,To The Domain Hotel & Wild Palms Hotel,0
+2,839,To The Domain Hotel & Wild Palms Hotel,0
+5,808,To BiltMore Hotel & Suites and Avatar Hotel,0
+0,3,To Shoreline,1
+3,725,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+1,368,To Hotel Avante & Grand Hotel,2
+1,369,To Hotel Avante & Grand Hotel,2
+1,366,To Hotel Avante & Grand Hotel,2
+1,367,To Hotel Avante & Grand Hotel,2
+1,364,To Hotel Avante & Grand Hotel,1
+1,365,To Hotel Avante & Grand Hotel,1
+1,362,To Hotel Avante & Grand Hotel,1
+1,363,To Hotel Avante & Grand Hotel,1
+1,360,To Hotel Avante & Grand Hotel,1
+1,361,To Hotel Avante & Grand Hotel,1
+1,380,To Hotel Avante & Grand Hotel,2
+1,381,To Hotel Avante & Grand Hotel,2
+1,382,To Hotel Avante & Grand Hotel,2
+1,383,To Hotel Avante & Grand Hotel,3
+1,384,To Hotel Avante & Grand Hotel,3
+1,385,To Hotel Avante & Grand Hotel,3
+1,386,To Hotel Avante & Grand Hotel,3
+3,387,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,388,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,389,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+4,784,To Plaza Suites & Embassy Suites Santa Clara,0
+4,785,To Plaza Suites & Embassy Suites Santa Clara,0
+4,786,To Plaza Suites & Embassy Suites Santa Clara,0
+4,787,To Plaza Suites & Embassy Suites Santa Clara,0
+4,780,To Plaza Suites & Embassy Suites Santa Clara,0
+4,781,To Plaza Suites & Embassy Suites Santa Clara,0
+4,782,To Plaza Suites & Embassy Suites Santa Clara,0
+4,783,To Plaza Suites & Embassy Suites Santa Clara,0
+4,788,To Plaza Suites & Embassy Suites Santa Clara,0
+4,789,To Plaza Suites & Embassy Suites Santa Clara,0
+8,605,"Hyatt Regency Embarcadero, via Millbrae BART",2
+2,579,To The Domain Hotel & Wild Palms Hotel,2
+2,578,To The Domain Hotel & Wild Palms Hotel,2
+8,604,"Hyatt Regency Embarcadero, via Millbrae BART",2
+2,573,To The Domain Hotel & Wild Palms Hotel,2
+2,572,To The Domain Hotel & Wild Palms Hotel,2
+2,571,To The Domain Hotel & Wild Palms Hotel,2
+2,570,To The Domain Hotel & Wild Palms Hotel,2
+2,577,To The Domain Hotel & Wild Palms Hotel,2
+2,576,To The Domain Hotel & Wild Palms Hotel,2
+2,575,To The Domain Hotel & Wild Palms Hotel,2
+2,574,To The Domain Hotel & Wild Palms Hotel,2
+1,60,To Shoreline,3
+1,61,To Shoreline,3
+7,258,To Shoreline,2
+7,259,To Shoreline,2
+1,64,To Shoreline,3
+1,65,To Shoreline,3
+2,66,To Shoreline,1
+2,67,To Shoreline,1
+7,252,To Mountain View Caltrain,1
+2,69,To Shoreline,2
+7,250,To Mountain View Caltrain,1
+7,251,To Mountain View Caltrain,1
+7,256,To Shoreline,2
+7,257,To Shoreline,2
+7,254,To Mountain View Caltrain,1
+7,255,To Shoreline,2
+8,603,"Hyatt Regency Embarcadero, via Millbrae BART",2
+8,602,"Hyatt Regency Embarcadero, via Millbrae BART",2
+3,731,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,730,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,733,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,732,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,735,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,734,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+5,508,To BiltMore Hotel & Suites and Avatar Hotel,1
+5,509,To BiltMore Hotel & Suites and Avatar Hotel,1
+4,506,To Plaza Suites & Embassy Suites Santa Clara,3
+5,507,To BiltMore Hotel & Suites and Avatar Hotel,1
+4,504,To Plaza Suites & Embassy Suites Santa Clara,3
+4,505,To Plaza Suites & Embassy Suites Santa Clara,3
+4,502,To Plaza Suites & Embassy Suites Santa Clara,2
+4,503,To Plaza Suites & Embassy Suites Santa Clara,3
+4,500,To Plaza Suites & Embassy Suites Santa Clara,2
+4,501,To Plaza Suites & Embassy Suites Santa Clara,2
+11,630,San Francisco International Airport,3
+11,631,San Francisco International Airport,3
+11,632,San Francisco International Airport,3
+11,633,San Francisco International Airport,3
+4,469,To Plaza Suites & Embassy Suites Santa Clara,1
+4,468,To Plaza Suites & Embassy Suites Santa Clara,1
+12,636,Mineta San José International Airport,3
+12,637,Mineta San José International Airport,3
+6,465,To Country Inn & Suites by Carlson and Aloft Santa Clara,3
+6,464,To Country Inn & Suites by Carlson and Aloft Santa Clara,3
+4,467,To Plaza Suites & Embassy Suites Santa Clara,1
+6,466,To Country Inn & Suites by Carlson and Aloft Santa Clara,3
+6,461,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,460,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+6,463,To Country Inn & Suites by Carlson and Aloft Santa Clara,3
+6,462,To Country Inn & Suites by Carlson and Aloft Santa Clara,2
+5,168,To Shoreline,3
+6,169,To Shoreline,1
+5,164,To Shoreline,3
+5,165,To Shoreline,3
+5,166,To Shoreline,3
+5,167,To Shoreline,3
+5,160,To Shoreline,2
+5,161,To Shoreline,2
+5,162,To Shoreline,2
+5,163,To Shoreline,3
+8,600,"Hyatt Regency Embarcadero, via Millbrae BART",2
+0,9,To Shoreline,2
+7,647,Mountain View Caltrain Loop,0
+7,646,Mountain View Caltrain Loop,0
+7,649,Mountain View Caltrain Loop,0
+7,648,Mountain View Caltrain Loop,0
+1,357,To Hotel Avante & Grand Hotel,1
+1,356,To Hotel Avante & Grand Hotel,1
+1,355,To Hotel Avante & Grand Hotel,1
+1,354,To Hotel Avante & Grand Hotel,1
+1,353,To Hotel Avante & Grand Hotel,1
+1,352,To Hotel Avante & Grand Hotel,1
+1,351,To Hotel Avante & Grand Hotel,1
+1,350,To Hotel Avante & Grand Hotel,1
+5,803,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,802,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,801,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,800,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,807,To BiltMore Hotel & Suites and Avatar Hotel,0
+5,806,To BiltMore Hotel & Suites and Avatar Hotel,0
+1,359,To Hotel Avante & Grand Hotel,1
+1,358,To Hotel Avante & Grand Hotel,1
+9,216,To Shoreline,2
+9,217,To Shoreline,2
+9,214,To Shoreline,1
+9,215,To Shoreline,2
+9,212,To Shoreline,1
+9,213,To Shoreline,1
+8,210,To Shoreline,3
+9,211,To Shoreline,1
+6,762,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+6,763,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+6,760,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+6,761,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+6,766,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+6,767,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+9,218,To Shoreline,2
+9,219,To Shoreline,3
+7,289,To Shoreline,3
+7,288,To Shoreline,3
+0,4,To Shoreline,1
+7,281,To Mountain View Caltrain,2
+7,280,To Mountain View Caltrain,2
+7,283,To Mountain View Caltrain,2
+7,282,To Mountain View Caltrain,2
+7,285,To Mountain View Caltrain,2
+7,284,To Mountain View Caltrain,2
+7,287,To Shoreline,3
+7,286,To Mountain View Caltrain,2
+0,678,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,679,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,674,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,675,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,676,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,677,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,670,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,671,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,672,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+0,673,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,0
+7,263,To Shoreline,2
+7,262,To Shoreline,2
+7,261,To Shoreline,2
+7,260,To Shoreline,2
+7,267,To Shoreline,2
+7,266,To Shoreline,2
+7,265,To Shoreline,2
+7,264,To Shoreline,2
+7,269,To Shoreline,2
+7,268,To Shoreline,2
+1,701,To Hotel Avante & Grand Hotel,0
+1,59,To Shoreline,2
+1,58,To Shoreline,2
+1,55,To Shoreline,1
+1,54,To Shoreline,1
+1,57,To Shoreline,2
+1,56,To Shoreline,2
+1,51,To Shoreline,3
+1,50,To Shoreline,3
+1,53,To Shoreline,1
+1,52,To Shoreline,3
+5,537,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,536,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,535,To BiltMore Hotel & Suites and Avatar Hotel,2
+1,63,To Shoreline,3
+5,533,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,532,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,531,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,530,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,539,To BiltMore Hotel & Suites and Avatar Hotel,2
+5,538,To BiltMore Hotel & Suites and Avatar Hotel,2
+4,775,To Plaza Suites & Embassy Suites Santa Clara,0
+4,774,To Plaza Suites & Embassy Suites Santa Clara,0
+4,777,To Plaza Suites & Embassy Suites Santa Clara,0
+3,115,To Shoreline,2
+3,114,To Shoreline,2
+3,117,To Shoreline,3
+3,116,To Shoreline,3
+3,111,To Shoreline,1
+3,110,To Shoreline,3
+3,113,To Shoreline,2
+3,112,To Shoreline,1
+4,771,To Plaza Suites & Embassy Suites Santa Clara,0
+3,119,To Shoreline,3
+3,118,To Shoreline,3
+4,770,To Plaza Suites & Embassy Suites Santa Clara,0
+4,773,To Plaza Suites & Embassy Suites Santa Clara,0
+4,772,To Plaza Suites & Embassy Suites Santa Clara,0
+6,429,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+6,428,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+5,534,To BiltMore Hotel & Suites and Avatar Hotel,2
+3,421,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,420,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,423,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",3
+3,422,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",2
+3,425,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",3
+3,424,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",3
+6,427,To Country Inn & Suites by Carlson and Aloft Santa Clara,1
+3,426,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",3
+0,308,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+0,309,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+7,300,To Mountain View Caltrain,3
+7,301,To Mountain View Caltrain,3
+7,302,To Mountain View Caltrain,3
+7,303,To Mountain View Caltrain,3
+7,304,To Mountain View Caltrain,3
+7,305,To Mountain View Caltrain,3
+7,306,To Mountain View Caltrain,3
+0,307,To Hilton Harden Inn Palo Alto & Palo Alto Caltrain,1
+2,825,To The Domain Hotel & Wild Palms Hotel,0
+2,824,To The Domain Hotel & Wild Palms Hotel,0
+2,827,To The Domain Hotel & Wild Palms Hotel,0
+2,846,To The Domain Hotel & Wild Palms Hotel,0
+2,845,To The Domain Hotel & Wild Palms Hotel,0
+2,826,To The Domain Hotel & Wild Palms Hotel,0
+2,843,To The Domain Hotel & Wild Palms Hotel,0
+2,842,To The Domain Hotel & Wild Palms Hotel,0
+2,841,To The Domain Hotel & Wild Palms Hotel,0
+2,840,To The Domain Hotel & Wild Palms Hotel,0
+2,821,To The Domain Hotel & Wild Palms Hotel,0
+5,820,To BiltMore Hotel & Suites and Avatar Hotel,0
+2,823,To The Domain Hotel & Wild Palms Hotel,0
+2,822,To The Domain Hotel & Wild Palms Hotel,0
+2,568,To The Domain Hotel & Wild Palms Hotel,2
+2,569,To The Domain Hotel & Wild Palms Hotel,2
+6,751,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+6,750,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+6,757,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+3,737,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+6,755,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+6,754,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+2,560,To The Domain Hotel & Wild Palms Hotel,1
+2,561,To The Domain Hotel & Wild Palms Hotel,1
+2,562,To The Domain Hotel & Wild Palms Hotel,1
+2,563,To The Domain Hotel & Wild Palms Hotel,1
+2,564,To The Domain Hotel & Wild Palms Hotel,1
+2,565,To The Domain Hotel & Wild Palms Hotel,1
+2,566,To The Domain Hotel & Wild Palms Hotel,2
+2,567,To The Domain Hotel & Wild Palms Hotel,2
+3,739,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+7,229,To Shoreline,1
+7,228,To Shoreline,1
+7,227,To Shoreline,1
+7,226,To Shoreline,1
+7,225,To Shoreline,1
+7,224,To Shoreline,1
+7,223,To Shoreline,1
+9,222,To Shoreline,3
+9,221,To Shoreline,3
+9,220,To Shoreline,3
+3,391,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,726,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,727,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,724,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,390,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+3,722,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,723,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,720,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,721,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,728,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+3,729,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",0
+5,151,To Shoreline,3
+5,150,To Shoreline,3
+5,153,To Shoreline,3
+5,152,To Shoreline,3
+5,155,To Shoreline,1
+5,154,To Shoreline,3
+5,157,To Shoreline,1
+5,156,To Shoreline,1
+5,159,To Shoreline,2
+5,158,To Shoreline,1
+9,609,"Westin St. Francis, via Millbrae BART",1
+9,608,"Westin St. Francis, via Millbrae BART",1
+12,634,Mineta San José International Airport,3
+3,399,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+12,635,Mineta San José International Airport,3
+6,749,To Country Inn & Suites by Carlson and Aloft Santa Clara,0
+3,398,"To Cupertino Inn, Courtyard San Jose Cupertino & Hilton Garden Inn Cupertino",1
+1,48,To Shoreline,3
+1,49,To Shoreline,3
+1,46,To Shoreline,2
+1,47,To Shoreline,3
+1,44,To Shoreline,2
+1,45,To Shoreline,2
+1,42,To Shoreline,1
+1,43,To Shoreline,2
+1,40,To Shoreline,1
+1,41,To Shoreline,1
+12,638,Mineta San José International Airport,3
+0,5,To Shoreline,1
+7,639,Mountain View Caltrain Loop,0
+4,489,To Plaza Suites & Embassy Suites Santa Clara,2
+4,488,To Plaza Suites & Embassy Suites Santa Clara,2
+4,487,To Plaza Suites & Embassy Suites Santa Clara,2
+4,486,To Plaza Suites & Embassy Suites Santa Clara,2
+4,485,To Plaza Suites & Embassy Suites Santa Clara,1
+4,484,To Plaza Suites & Embassy Suites Santa Clara,1
+4,483,To Plaza Suites & Embassy Suites Santa Clara,1
+4,482,To Plaza Suites & Embassy Suites Santa Clara,1
+4,481,To Plaza Suites & Embassy Suites Santa Clara,1
+4,480,To Plaza Suites & Embassy Suites Santa Clara,1
+4,472,To Plaza Suites & Embassy Suites Santa Clara,1
+4,473,To Plaza Suites & Embassy Suites Santa Clara,1
+4,470,To Plaza Suites & Embassy Suites Santa Clara,1
+4,471,To Plaza Suites & Embassy Suites Santa Clara,1
+4,476,To Plaza Suites & Embassy Suites Santa Clara,1
+4,477,To Plaza Suites & Embassy Suites Santa Clara,1
+4,474,To Plaza Suites & Embassy Suites Santa Clara,1
+4,475,To Plaza Suites & Embassy Suites Santa Clara,1
+4,478,To Plaza Suites & Embassy Suites Santa Clara,1
+4,479,To Plaza Suites & Embassy Suites Santa Clara,1
