@@ -1,0 +1,9 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "Transport Tracker admin",
+  "main": "index.js",
+  "author": "Stephen McDonald <stephenmcd@google.com>",
+  "license": "Apache-2.0",
+  "dependencies": {"ejs": "2.5.5"}
+}

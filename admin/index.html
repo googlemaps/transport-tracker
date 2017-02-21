@@ -1,0 +1,71 @@
+<html>
+<head>
+
+<title>Transport Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.3/material.min.css">
+
+<style>
+.day {margin: 50px;}
+#loading {width: 100%; height: 5px;}
+h2, h3 {text-transform: uppercase;}
+h2 {margin-left: 20px;}
+h3 {margin-left: -10px !important; width: 160px; height: 70px; font-size: 20px !important;}
+.trips {height: 300px; overflow: scroll;}
+.mdl-card {float: left; width: auto; background: #F5F5F5; margin: 20px; padding: 20px;}
+nav {height: auto !important; width: 100% !important;}
+.is-active {border-bottom: 3px solid #fff;}
+label {margin-right: 3px; font-weight: bold;}
+#transports ul {padding: 0; list-style-type: none;}
+#transports label {width: 70px; display: inline-block;}
+.mdl-card__title {display: block;}
+header {display: flex !important;}
+.empty {margin: 50px;}
+</style>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.3/material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<script src="./node_modules/ejs/ejs.min.js"></script>
+<script src="main.js"></script>
+
+</head>
+
+<body class="mdl-layout">
+
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title">Transport Tracker</span>
+  </div>
+</header>
+
+<main class="mdl-layout__content">
+  <div id="loading" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+  <div class="mdl-grid">
+    <div class="content" id="transports"></div>
+  </div>
+</main>
+
+<script id="transports-template" type="x-ejs">
+<% transports.forEach(function(transport) { %>
+<div class="mdl-card" style="background:rgb(250, <%= Math.round(transport.power * 2.5 ) %>, <%= Math.round(transport.power * 2.5 ) %>)">
+  <div class="mdl-card__title">
+    <h3 class="mdl-card__title-text"><%= transport.id %></h3>
+  </div>
+  <div class="mdl-card__actions">
+  <img src="<%= transport.map %>">
+  <ul>
+    <!--<li><label>Location:</label><%= transport.lat %>,<%= transport.lng %></li>-->
+    <li><label>Power:</label><%= transport.power %>%</li>
+    <li><label>Updated:</label><%= transport.time %></li>
+  </ul>
+  </div>
+</div>
+<% }) %>
+</script>
+
+</body>
+</html>
