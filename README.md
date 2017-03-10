@@ -30,7 +30,7 @@ API keys and other setup guides.
 
 ## Directories in this repo
 
-The project is contains the following subdirectories, each housing
+The project contains the following subdirectories, each housing
 a single component:
 
 ### `admin`
