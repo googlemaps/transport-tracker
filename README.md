@@ -36,7 +36,7 @@ a single component:
 ### `admin`
 
 A web interface for administrators to see a quick overview of all the
-assets being tracked, and also to make updates to the GTFS schedule.
+assets being tracked.
 
 ### `android`
 
