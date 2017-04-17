@@ -31,14 +31,18 @@ function getCalendarDateById(service_id) {
 }
 
 function getCalendarDateByDate(date) {
-  return db.getAsync('SELECT * FROM calendar_dates WHERE date = ?', date);
+  return db.getAsync('SELECT * FROM calendar_dates WHERE date = $date', {
+    $date: date
+  });
 }
 function getRoutes() {
   return db.allAsync('SELECT * FROM routes ORDER BY route_id');
 }
 
 function getRouteById(route_id) {
-  return db.getAsync('SELECT * FROM routes WHERE route_id = ?', route_id);
+  return db.getAsync('SELECT * FROM routes WHERE route_id = $route_id', {
+    $route_id: route_id
+  });
 }
 
 function getStops() {
@@ -46,7 +50,9 @@ function getStops() {
 }
 
 function getStopById(stop_id) {
-  return db.getAsync('SELECT * FROM stops WHERE stop_id = ?', stop_id);
+  return db.getAsync('SELECT * FROM stops WHERE stop_id = $stop_id', {
+    $stop_id: stop_id
+  });
 }
 
 function getStopsForRoute(route_id) {
@@ -56,8 +62,8 @@ function getStopsForRoute(route_id) {
           SELECT stop_id FROM stop_times
           WHERE trip_id IN (
               SELECT trip_id FROM trips
-              WHERE route_id = ?))`,
-    route_id
+              WHERE route_id = $route_id))`,
+    {$route_id: route_id}
   );
 }
 
@@ -70,48 +76,48 @@ function getStopTimes() {
 function getStopInfoForTrip(trip_id) {
   return db.allAsync(
     ` SELECT st.arrival_time as arrival_time, st.departure_time as departure_time,
-              st.stop_id as stop_id, st.stop_sequence as stop_sequence, 
+              st.stop_id as stop_id, st.stop_sequence as stop_sequence,
               s.stop_lat as lat, s.stop_lon as lng, s.stop_name as stop_name, cd.date as date
-      FROM stop_times as st 
-        INNER JOIN stops as s 
-        INNER JOIN calendar_dates AS cd 
+      FROM stop_times as st
+        INNER JOIN stops as s
+        INNER JOIN calendar_dates AS cd
         INNER JOIN trips AS t
-      WHERE st.trip_id = :trip_id 
+      WHERE st.trip_id = $trip_id
         AND st.stop_id = s.stop_id
-        AND st.trip_id = t.trip_id 
+        AND st.trip_id = t.trip_id
         AND t.service_id = cd.service_id
       ORDER BY departure_time`,
-    trip_id
+    {$trip_id: trip_id}
   );
 }
 
 function getStopsForTrip(trip_id) {
   return db.allAsync(
-    ` SELECT * 
+    ` SELECT *
       FROM stops
-      WHERE stop_id IN (SELECT stop_id 
+      WHERE stop_id IN (SELECT stop_id
                         FROM stop_times
-                        WHERE trip_id = ?
+                        WHERE trip_id = $trip_id
                         ORDER BY departure_time)`,
-    trip_id
+    {$trip_id: trip_id}
   );
 }
 
 function getStopTimesForTrip(trip_id) {
   return db.allAsync(
     ` SELECT * FROM stop_times
-      WHERE trip_id = :trip_id
+      WHERE trip_id = $trip_id
       ORDER BY departure_time`,
-    trip_id
+    {$trip_id: trip_id}
   );
 }
 
 function getStopTimesForStop(stop_id) {
   return db.allAsync(
     ` SELECT * FROM stop_times
-      WHERE stop_id = :stop_id
+      WHERE stop_id = $stop_id
       ORDER BY departure_time`,
-    stop_id
+    {$stop_id: stop_id}
   );
 }
 
@@ -120,7 +126,9 @@ function getTrips() {
 }
 
 function getTripById(trip_id) {
-  return db.getAsync('SELECT * FROM trips WHERE trip_id = ?', trip_id);
+  return db.getAsync('SELECT * FROM trips WHERE trip_id = $trip_id', {
+    $trip_id: trip_id
+  });
 }
 
 function getTripsForStop(stop_id) {
@@ -128,8 +136,8 @@ function getTripsForStop(stop_id) {
     ` SELECT * FROM trips
       WHERE trip_id IN (
           SELECT trip_id FROM stop_times
-          WHERE stop_id = ?)`,
-    stop_id
+          WHERE stop_id = $stop_id)`,
+    {$stop_id: stop_id}
   );
 }
 
@@ -145,9 +153,9 @@ function getTripsForCalendarDate(calendar_date) {
                 WHERE trip_id = t.trip_id
                 ORDER BY departure_time ASC LIMIT 1) as departure_stop_id
       FROM trips AS t INNER JOIN calendar_dates AS c
-      WHERE t.service_id = c.service_id AND c.date = ?
+      WHERE t.service_id = c.service_id AND c.date = $calendar_date
       ORDER BY departure_date, departure_time`,
-    calendar_date
+    {$calendar_date: calendar_date}
   );
 }
 
@@ -179,13 +187,13 @@ function getTripsForRouteOrderedByTime(route_id) {
               WHERE trip_id = t.trip_id
               ORDER BY departure_time ASC LIMIT 1) as departure_stop_id
       FROM trips AS t INNER JOIN calendar_dates AS c
-      WHERE t.route_id = ? AND t.service_id = c.service_id
+      WHERE t.route_id = $route_id AND t.service_id = c.service_id
       ORDER BY departure_date, departure_time`,
-    route_id
+    {$route_id: route_id}
   );
 }
 
-function getNextThreeTripsForRoute(route_id, calendarDate, time) {
+function getNextThreeTripsForRoute(route_id, calendar_date, time) {
   return db.allAsync(
     ` SELECT t.route_id AS route_id, t.service_id AS service_id, t.trip_headsign AS trip_headsign,
               t.trip_id AS trip_id, c.date AS departure_date,
@@ -196,18 +204,19 @@ function getNextThreeTripsForRoute(route_id, calendarDate, time) {
               WHERE trip_id = t.trip_id
               ORDER BY departure_time ASC LIMIT 1) as departure_stop_id
       FROM trips AS t INNER JOIN calendar_dates AS c
-      WHERE t.route_id = ? AND t.service_id = c.service_id
-        AND (departure_date > ? OR departure_date = ? and departure_time > ?)
+      WHERE t.route_id = $route_id AND t.service_id = c.service_id
+        AND (departure_date > $calendar_date OR departure_date = $calendar_date and departure_time > $time)
       ORDER BY departure_date, departure_time
       LIMIT 3`,
-    route_id,
-    calendarDate,
-    calendarDate,
-    time
+    {
+      $route_id: route_id,
+      $calendar_date: calendar_date,
+      $time: time
+    }
   );
 }
 
-function getTripsInServiceForRoute(calendarDate, time, route) {
+function getTripsInServiceForRoute(calendar_date, time, route_id) {
   return db.allAsync(
     ` SELECT  t.route_id AS route_id, t.service_id AS service_id, t.trip_headsign AS trip_headsign,
               t.trip_id AS trip_id,
@@ -220,16 +229,17 @@ function getTripsInServiceForRoute(calendarDate, time, route) {
               WHERE    trip_id = t.trip_id
               ORDER BY arrival_time DESC limit 1) AS final_arrival_time
       FROM trips AS t INNER JOIN calendar_dates AS c
-      WHERE t.service_id = c.service_id 
-        AND c.date = ? 
-        AND initial_departure_time <= ? 
-        AND ? <= final_arrival_time
-        AND t.route_id = ?
+      WHERE t.service_id = c.service_id
+        AND c.date = $calendar_date
+        AND initial_departure_time <= $time
+        AND $time <= final_arrival_time
+        AND t.route_id = $route_id
       ORDER BY trip_id ASC`,
-    calendarDate,
-    time,
-    time,
-    route
+    {
+      $calendar_date: calendar_date,
+      $time: time,
+      $route_id: route_id
+    }
   );
 }
 
