@@ -11,6 +11,6 @@ This app has two dependencies: the
 in the Google Play services location APIs, 
 and [Firebase Realtime Database](https://firebase.google.com/docs/database/).
 
-To authenticate to Firebase, populate the `serviceAccountKey.json` file using the
-process outlined in
-[Firebase Admin SDK setup](https://firebase.google.com/docs/admin/setup).
+To authenticate to Firebase, add Firebase to your Android project as described
+in the 
+[Firebase documentation](https://firebase.google.com/docs/android/setup).
