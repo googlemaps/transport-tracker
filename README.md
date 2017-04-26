@@ -6,6 +6,9 @@ range of moving assets (such as vehicles) and visualize them on a live map. The
 applications use a mixture of technologies - Android, Firebase,
 Google Maps, GTFS (General Transit Feed Specification), and more.
 
+**Note:** This application implements asset tracking. For use in a production environment, you therefore need a [Google Maps APIs Premium Plan license](
+https://developers.google.com/maps/pricing-and-plans/). For more information, see the [Google Maps APIs terms of service](https://developers.google.com/maps/terms#section_10_4).
+
 ## Overview
 
 This is the open source release for the 
@@ -36,7 +39,7 @@ a single component:
 ### `admin`
 
 A web interface for administrators to see a quick overview of all the
-assets being tracked, and also to make updates to the GTFS schedule.
+assets being tracked.
 
 ### `android`
 
