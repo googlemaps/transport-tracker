@@ -81,7 +81,6 @@ public class TrackerActivity extends AppCompatActivity {
         mTransportIdEditText = (EditText) findViewById(R.id.transport_id);
         mEmailEditText = (EditText) findViewById(R.id.email);
         mPasswordEditText = (EditText) findViewById(R.id.password);
-        mPasswordEditText.setTransformationMethod(new PasswordTransformationMethod());
 
         mPrefs = getSharedPreferences(getString(R.string.prefs), MODE_PRIVATE);
         String transportID = mPrefs.getString(getString(R.string.transport_id), "");

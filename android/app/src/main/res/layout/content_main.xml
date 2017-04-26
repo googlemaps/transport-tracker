@@ -136,6 +136,7 @@
 
             <EditText
                 android:id="@+id/password"
+                android:inputType="textPassword"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/email"
