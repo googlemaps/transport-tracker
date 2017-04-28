@@ -14,18 +14,16 @@
  */
 
 const assert = require('assert');
-const moment = require('moment');
 const Promise = require('bluebird');
-const gtfs = require('../gtfs');
+const {GTFS} = require('../gtfs');
+const gtfs = new GTFS();
 const _async = require('asyncawait/async');
 const _await = require('asyncawait/await');
+const trackerConfig = require('../tracker_configuration.json');
 const googleMapsClient = require('@google/maps').createClient({
-  // TODO: Add Google Maps API Key here
-  key: 'YOUR_API_KEY',
+  key: trackerConfig.mapsApiKey,
   Promise
 });
-const Simulation = require('../simulation').Simulation;
-const bus_simulation = require('../bus_simulation');
 
 // Google Maps Client usage testing
 const stop = {
@@ -47,7 +45,7 @@ describe('GoogleMapsClient', () => {
             .asPromise()
         );
         assert.equal(
-          '600-698 W Evelyn Ave, Mountain View, CA 94041, USA',
+          '600 W Evelyn Ave, Mountain View, CA 94041, USA',
           response.json.results[0].formatted_address
         );
       })
@@ -349,263 +347,5 @@ describe('GTFS', () => {
         });
       })
     );
-  });
-});
-
-// Simulation tests
-// Simulation depends on a set of firebase Ref objects to publish it's updates to.
-class FakeFirebaseRef {
-  constructor(val) {
-    this.val = val;
-  }
-  set(val) {
-    this.val = val;
-  }
-}
-
-describe('Simulation', () => {
-  describe('#startSimulation', () => {
-    it(
-      'should set up timers and advance to the first panel',
-      _async(() => {
-        const timeRef = new FakeFirebaseRef();
-        const mapRef = new FakeFirebaseRef();
-        const panelsRef = new FakeFirebaseRef();
-        const busLocationsRef = new FakeFirebaseRef();
-        const simulation = new Simulation(
-          timeRef,
-          mapRef,
-          panelsRef,
-          busLocationsRef
-        );
-
-        assert.equal(0, simulation.panelIndex);
-        _await(simulation.startSimulation());
-        assert.notEqual(null, simulation.timeTimerId);
-        assert.notEqual(null, simulation.panelTimerId);
-        assert.notEqual(null, simulation.busTimerId);
-        assert.equal(1, simulation.panelIndex);
-        assert.equal(0, mapRef.val.panel);
-        simulation.stopSimulation();
-        assert.equal(null, simulation.timeTimerId);
-        assert.equal(null, simulation.panelTimerId);
-        assert.equal(null, simulation.busTimerId);
-      })
-    );
-  });
-
-  describe('#panelAdvance', () => {
-    it('should populate mapRef with correct panel state at t0', () => {
-      const timeRef = new FakeFirebaseRef();
-      const mapRef = new FakeFirebaseRef();
-      const panelsRef = new FakeFirebaseRef();
-      const busLocationsRef = new FakeFirebaseRef();
-      const simulation = new Simulation(
-        timeRef,
-        mapRef,
-        panelsRef,
-        busLocationsRef
-      );
-
-      assert.equal(0, simulation.panelIndex);
-      simulation.panelAdvance();
-      assert.equal(1, simulation.panelIndex);
-      assert.equal(null, timeRef.val);
-      assert.equal(null, panelsRef.val);
-      assert.equal(null, busLocationsRef.val);
-      assert.equal(0, mapRef.val.panel);
-    });
-  });
-
-  describe('#timeAdvance', () => {
-    it(
-      'should advance time',
-      _async(() => {
-        const timeRef = new FakeFirebaseRef();
-        const mapRef = new FakeFirebaseRef();
-        const panelsRef = new FakeFirebaseRef();
-        const busLocationsRef = new FakeFirebaseRef();
-        const simulation = new Simulation(
-          timeRef,
-          mapRef,
-          panelsRef,
-          busLocationsRef
-        );
-
-        assert.equal(
-          '2016-05-18 06:00',
-          simulation.simulationTime.format('YYYY-MM-DD hh:mm')
-        );
-        simulation.timeAdvance();
-        assert.deepEqual(
-          '2016-05-18 06:01',
-          simulation.simulationTime.format('YYYY-MM-DD hh:mm')
-        );
-      })
-    );
-
-    it(
-      'should roll over after end of simulation',
-      _async(() => {
-        const timeRef = new FakeFirebaseRef();
-        const panelsRef = new FakeFirebaseRef();
-        const simulation = new Simulation(timeRef, null, panelsRef);
-
-        simulation.simulationTime = moment.utc(
-          '2016-05-20 23:59',
-          'YYYY-MM-DD hh:mm'
-        );
-        simulation.timeAdvance();
-        assert.deepEqual(
-          '2016-05-18 06:00',
-          simulation.simulationTime.format('YYYY-MM-DD hh:mm')
-        );
-      })
-    );
-
-    it(
-      'should set the panelsRef',
-      _async(() => {
-        const timeRef = new FakeFirebaseRef();
-        const panelsRef = new FakeFirebaseRef();
-        const simulation = new Simulation(timeRef, null, panelsRef);
-
-        _await(simulation.timeAdvance());
-        assert(panelsRef.val);
-        assert.equal(3, panelsRef.val[0].left.length);
-        assert.equal(2, panelsRef.val[0].right.length);
-        assert.equal(3, panelsRef.val[1].left.length);
-        assert.equal(0, panelsRef.val[1].right.length);
-        assert.equal(3, panelsRef.val[2].left.length);
-        assert.equal(2, panelsRef.val[2].right.length);
-      })
-    );
-  });
-
-  describe('#requestDirectionsForTrip', () => {
-    it(
-      'should generate the correct request structure for a trip',
-      _async(() => {
-        const tripId = 630;
-        const start = {lat: 37.4263, lng: -122.078634};
-        const end = {lat: 37.616763, lng: -122.383949};
-        const simulation = new Simulation();
-
-        const trip = _await(gtfs.getTripById(tripId));
-        const {origin, destination} = simulation.requestDirectionsForTrip(trip);
-        assert.deepEqual(start, origin);
-        assert.deepEqual(end, destination);
-      })
-    );
-
-    it(
-      'should generate the correct request structure for a multi-stop trip',
-      _async(() => {
-        const tripId = 469;
-        const expected = {
-          origin: {lat: 37.4263, lng: -122.078634},
-          waypoints: [{lat: 37.387002, lng: -121.983223}],
-          destination: {lat: 37.383781, lng: -121.978797}
-        };
-
-        const simulation = new Simulation();
-
-        const trip = _await(gtfs.getTripById(tripId));
-        const request = simulation.requestDirectionsForTrip(trip);
-        assert.deepEqual(request, expected);
-      })
-    );
-  });
-});
-
-describe('Bus Simulation', () => {
-  describe('getBusesActiveAt', () => {
-    it('should return nothing for a time before the start of IO', () => {
-      const beforeIO = moment.utc('20160515 10:01:23', 'YYYYMMDD HH:mm:ss');
-      const activeBuses = bus_simulation.getBusesActiveAt(beforeIO);
-      assert.equal(activeBuses.length, 0);
-    });
-
-    it('should return active buses for a time during IO', () => {
-      const duringIO = moment.utc('20160518 06:33:23', 'YYYYMMDD HH:mm:ss');
-      const activeBuses = bus_simulation.getBusesActiveAt(duringIO);
-      assert.equal(activeBuses.length, 4);
-    });
-
-    it('should return nothing for a time after the end of IO', () => {
-      const afterIO = moment.utc('20160520 19:01:23', 'YYYYMMDD HH:mm:ss');
-      const activeBuses = bus_simulation.getBusesActiveAt(afterIO);
-      assert.equal(activeBuses.length, 0);
-    });
-  });
-
-  describe('getBusPositionsAt', () => {
-    it('should return nothing for a time before the start of IO', () => {
-      const beforeIO = moment.utc('20160515 10:01:23', 'YYYYMMDD HH:mm:ss');
-      const activeBuses = bus_simulation.getBusPositionsAt(beforeIO);
-      assert.equal(activeBuses.length, 0);
-    });
-
-    it('should return active buses for a time during IO', () => {
-      const duringIO = moment.utc('20160518 06:33:23', 'YYYYMMDD HH:mm:ss');
-      const activeBuses = bus_simulation.getBusPositionsAt(duringIO);
-      assert.equal(activeBuses.length, 4);
-      assert.deepEqual(activeBuses, [
-        {
-          trip: {
-            route_id: 8,
-            service_id: '1',
-            trip_headsign: 'To Shoreline',
-            trip_id: 199,
-            departure_date: 20160518,
-            departure_time: '06:00:00',
-            departure_stop_id: 16
-          },
-          location: {lat: 37.523275, lng: -122.26683}
-        },
-        {
-          trip: {
-            route_id: 9,
-            service_id: '1',
-            trip_headsign: 'To Shoreline',
-            trip_id: 211,
-            departure_date: 20160518,
-            departure_time: '06:00:00',
-            departure_stop_id: 17
-          },
-          location: {lat: 37.53609, lng: -122.28024666666667}
-        },
-        {
-          trip: {
-            route_id: 8,
-            service_id: '1',
-            trip_headsign: 'To Shoreline',
-            trip_id: 200,
-            departure_date: 20160518,
-            departure_time: '06:20:00',
-            departure_stop_id: 16
-          },
-          location: {lat: 37.73872, lng: -122.4008}
-        },
-        {
-          trip: {
-            route_id: 9,
-            service_id: '1',
-            trip_headsign: 'To Shoreline',
-            trip_id: 212,
-            departure_date: 20160518,
-            departure_time: '06:20:00',
-            departure_stop_id: 17
-          },
-          location: {lat: 37.75855, lng: -122.40552}
-        }
-      ]);
-    });
-
-    it('should return nothing for a time after the end of IO', () => {
-      const afterIO = moment.utc('20160520 19:01:23', 'YYYYMMDD HH:mm:ss');
-      const activeBuses = bus_simulation.getBusPositionsAt(afterIO);
-      assert.equal(activeBuses.length, 0);
-    });
   });
 });

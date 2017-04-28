@@ -13,27 +13,46 @@
  * permissions and limitations under the License.
  */
 
-// TODO: configure this to be your Firebase Real Time database URL
-const databaseURL = '';
+/*eslint-disable unknown-require */
+const trackerConfig = require('./tracker_configuration.json');
 
+const Promise = require('bluebird');
 const admin = require('firebase-admin');
-const Simulation = require('./simulation').Simulation;
-const _async = require('asyncawait/async');
-
 const serviceAccount = require('./serviceAccountKey.json');
+const panelConfig = require('./panels_config.json');
+const generatedPaths = require('./paths.json');
+const googleMapsClient = require('@google/maps').createClient({
+  key: trackerConfig.mapsApiKey,
+  Promise
+});
+
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL
+  databaseURL: trackerConfig.databaseURL
 });
 
-const mapRef = admin.database().ref('map');
-const timeRef = admin.database().ref('current-time');
-const panelsRef = admin.database().ref('panels');
+// Database references
 const busLocationsRef = admin.database().ref('bus-locations');
+const mapRef = admin.database().ref('map');
+const panelsRef = admin.database().ref('panels');
+const promoRef = admin.database().ref('promo');
+const timeRef = admin.database().ref('current-time');
 
-const simulation = new Simulation(timeRef, mapRef, panelsRef, busLocationsRef);
-_async(() => {
-  simulation.startSimulation();
-})().catch(err => {
-  console.error(err);
-});
+// Library classes
+const {BusSimulator} = require('./bus_simulator.js');
+const {GTFS} = require('./gtfs.js');
+const {HeartBeat} = require('./heart_beat.js');
+const {PanelChanger} = require('./panel_changer.js');
+const {PromoChanger} = require('./promo_changer.js');
+const {TimeTable} = require('./time_table.js');
+
+const gtfs = new GTFS();
+new HeartBeat(timeRef, trackerConfig.simulation);
+new TimeTable(timeRef, panelsRef, gtfs, panelConfig, googleMapsClient);
+new PanelChanger(mapRef, panelConfig);
+new PromoChanger(promoRef);
+if (trackerConfig.simulation) {
+  new BusSimulator(timeRef, gtfs, busLocationsRef, generatedPaths);
+} else {
+  // Exercise for the reader: integrate real bus location data
+}

@@ -4,12 +4,6 @@
     "routesGroups": [[0, 7, 1], [2, 3]],
     "markers": [
       {
-        "lat": 37.4263,
-        "lng": -122.078636,
-        "iconPath": "/images/dashboard/logo_io_64.png",
-        "name": "Google I/O"
-      },
-      {
         "lat": 37.44291,
         "lng": -122.164276,
         "iconPath": "/images/dashboard/placemarker_yellow.png",
@@ -80,12 +74,6 @@
     "routesGroups": [[6, 5, 4], []],
     "markers": [
       {
-        "lat": 37.4263,
-        "lng": -122.078636,
-        "iconPath": "/images/dashboard/logo_io_64.png",
-        "name": "Google I/O"
-      },
-      {
         "lat": 37.417946,
         "lng": -121.97653,
         "iconPath": "/images/dashboard/placemarker_lime.png",
@@ -131,12 +119,6 @@
     "panel": 2,
     "routesGroups": [[9, 8, 10], [11, 12]],
     "markers": [
-      {
-        "lat": 37.4263,
-        "lng": -122.078636,
-        "iconPath": "/images/dashboard/logo_io_64.png",
-        "name": "Google I/O"
-      },
       {
         "lat": 37.794075,
         "lng": -122.395454,

@@ -1,0 +1,80 @@
+application: io-bus-tracker
+version: 1
+runtime: python27
+threadsafe: true
+api_version: 1
+
+default_expiration: "30d"
+
+handlers:
+- url: /(.*\.(appcache|manifest))
+  mime_type: text/cache-manifest
+  static_files: \1
+  upload: (.*\.(appcache|manifest))
+  expiration: "0m"
+  secure: always
+
+- url: /(.*\.css)
+  mime_type: text/css
+  static_files: \1
+  upload: (.*\.css)
+  expiration: "1m"
+  secure: always
+
+- url: /(.*\.html)
+  mime_type: text/html
+  static_files: \1
+  upload: (.*\.html)
+  expiration: "1m"
+  secure: always
+
+- url: /(.*\.ico)
+  mime_type: image/x-icon
+  static_files: \1
+  upload: (.*\.ico)
+  expiration: "7d"
+  secure: always
+
+- url: /(.*\.js)
+  mime_type: text/javascript
+  static_files: \1
+  upload: (.*\.js)
+  expiration: "1m"
+  secure: always
+
+- url: /(.*\.json)
+  mime_type: application/json
+  static_files: \1
+  upload: (.*\.json)
+  expiration: "10m"
+  secure: always
+  http_headers:
+    Access-Control-Allow-Origin: "*"
+    # Hack to get * past the yaml parser thanks to StackOverflow:
+    # See http://stackoverflow.com/questions/17555269/access-control-allow-origin-header-on-google-app-engine
+
+# image files
+- url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  static_files: \1
+  upload: (.*\.(bmp|gif|ico|jpeg|jpg|png))
+  secure: always
+
+# index files
+- url: /(.+)/
+  static_files: \1/index.html
+  upload: (.+)/index.html
+  expiration: "1m"
+  secure: always
+
+- url: /(.+)
+  static_files: \1/index.html
+  upload: (.+)/index.html
+  expiration: "1m"
+  secure: always
+
+# site root
+- url: /
+  static_files: index.html
+  upload: index.html
+  expiration: "1m"
+  secure: always
