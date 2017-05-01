@@ -13,16 +13,25 @@
  * permissions and limitations under the License.
  */
 
+/* eslint-disable no-unused-vars, no-shadow-global */
+/* globals google firebase */
+
 // TODO: See https://firebase.google.com/docs/web/setup for how to configure access to Firebase
 const firebaseConfig = {};
 
 const mapStyle = [
-  {elementType: 'geometry', stylers: [{color: '#eceff1'}]},
-  {elementType: 'labels', stylers: [{visibility: 'off'}]},
+  {
+    elementType: 'geometry',
+    stylers: [{color: '#eceff1'}]
+  },
+  {
+    elementType: 'labels',
+    stylers: [{visibility: 'off'}]
+  },
   {
     featureType: 'administrative',
     elementType: 'labels',
-    stylers: [{visibility: 'off'}]
+    stylers: [{visibility: 'on'}]
   },
   {
     featureType: 'road',
@@ -34,8 +43,14 @@ const mapStyle = [
     elementType: 'geometry.stroke',
     stylers: [{visibility: 'off'}]
   },
-  {featureType: 'road.local', stylers: [{visibility: 'off'}]},
-  {featureType: 'water', stylers: [{color: '#b0bec5'}]}
+  {
+    featureType: 'road.local',
+    stylers: [{visibility: 'off'}]
+  },
+  {
+    featureType: 'water',
+    stylers: [{color: '#b0bec5'}]
+  }
 ];
 
 class MarkerManager {
@@ -49,7 +64,8 @@ class MarkerManager {
       position: location,
       map: this.map,
       icon: icon,
-      title: title
+      title: title,
+      optimized: false
     });
     this.markers.push(marker);
   }
@@ -62,160 +78,17 @@ class MarkerManager {
   }
 }
 
-function initMap() {
-  const map = new google.maps.Map(document.getElementById('map'), {
-    disableDefaultUI: true,
-    styles: mapStyle
-  });
-  const markerManager = new MarkerManager(map);
-  const cardsElement = document.getElementsByClassName('cards')[0];
-  const displayTimeElement = document.getElementsByClassName('display-time')[0];
-  const pageMarkerPanelElts = [
-    document.getElementById('page-marker-panel-0'),
-    document.getElementById('page-marker-panel-1'),
-    document.getElementById('page-marker-panel-2')
-  ];
-
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.database();
-
-  db.ref('map').on('value', snapshot => {
-    const val = snapshot.val();
-    map.fitBounds({
-      east: val.northEastLng,
-      north: val.northEastLat,
-      south: val.southWestLat,
-      west: val.southWestLng
-    });
-
-    markerManager.clear();
-    val.markers.forEach(marker => {
-      markerManager.add(
-        {lat: marker.lat, lng: marker.lng},
-        marker.iconPath,
-        marker.name
-      );
-    });
-
-    cardsElement.style['top'] = `calc(${val.panel * (-100)}vh - ${val.panel *
-      64}px)`;
-
-    pageMarkerPanelElts.forEach(elt => {
-      elt.classList.remove('selected');
-    });
-    pageMarkerPanelElts[val.panel].classList.add('selected');
-  });
-
-  db.ref('current-time').on('value', snapshot => {
-    displayTimeElement.textContent = snapshot.val();
-  });
-
-  db.ref('panels').on('value', snapshot => {
-    cardsElement.innerHTML = renderPanels(snapshot.val());
-  });
-
-  const busLocationMarkers = {};
-
-  db.ref('bus-locations').on('value', snapshot => {
-    const val = snapshot.val();
-
-    for (let key in busLocationMarkers) {
-      if (val === null || !(key in val)) {
-        const marker = busLocationMarkers[key];
-        marker.setMap(null);
-        delete busLocationMarkers[key];
-      }
-    }
-
-    for (let key in val) {
-      const bus = val[key];
-
-      if (key in busLocationMarkers) {
-        const marker = busLocationMarkers[key];
-        marker.setPosition({lat: bus.lat, lng: bus.lng});
-      } else {
-        const url = colorToBusMarker(bus.route_color);
-        const marker = new google.maps.Marker({
-          position: {lat: bus.lat, lng: bus.lng},
-          map: map,
-          icon: {url, anchor: new google.maps.Point(18, 18)},
-          title: bus.route_name
-        });
-        busLocationMarkers[key] = marker;
-      }
-    }
-  });
-}
-
-function colorToBusMarker(color) {
-  switch (color) {
-    case '86D1D8':
-      return '/images/dashboard/busmarker_blue.png';
-    case '445963':
-      return '/images/dashboard/busmarker_gray.png';
-    case '7BB241':
-      return '/images/dashboard/busmarker_green.png';
-    case '5D6ABF':
-      return '/images/dashboard/busmarker_indigo.png';
-    case 'A8D84E':
-      return '/images/dashboard/busmarker_lime.png';
-    case 'FCBBCB':
-      return '/images/dashboard/busmarker_pink.png';
-    case 'FF5151':
-      return '/images/dashboard/busmarker_red.png';
-    case '25C5D9':
-      return '/images/dashboard/busmarker_sf1.png';
-    case 'FF4081':
-      return '/images/dashboard/busmarker_sf2.png';
-    case 'FFC927':
-      return '/images/dashboard/busmarker_yellow.png';
-  }
-}
-
-function renderPanels(panels) {
-  if (!panels) {
-    return '';
-  }
-
-  return panels
-    .map(panel => {
-      return `<div class="panel">
-              ${renderSide(panel.left)}
-              ${renderSide(panel.right)}
-            </div>`;
-    })
-    .join('');
-}
-
-function renderSide(side) {
-  if (side) {
-    return `<div class="side">${side
-      .map(card => {
-        return renderCard(card);
-      })
-      .join('')}</div>`;
-  } else {
-    return '';
-  }
-}
-
-function renderCard(data) {
-  const card = new Card(data);
-  return card.render;
-}
-
 class Card {
   constructor(data) {
     this.data = data;
   }
 
   get direction() {
-    // Stop ID is Google I/O
-    if (this.data.next_trip.stop_info[0].stop_id == 0) {
+    // Stop ID #0 is Google I/O
+    if (this.data.next_trip && this.data.next_trip.stop_info[0].stop_id === 0) {
       return 'To';
-    } else {
-      return 'From';
     }
+    return 'From';
   }
 
   get headsign() {
@@ -252,7 +125,7 @@ class Card {
 
   get isDark() {
     // Dark background for white text
-    return this.data.route.route_text_color == 'FFFFFF';
+    return this.data.route.route_text_color === 'FFFFFF';
   }
 
   get color() {
@@ -298,25 +171,37 @@ class Card {
   }
 
   get stopTimes() {
-    return this.data.next_trip.stop_info
-      .map(stop_info => {
-        return `<div class="stop-time">${stop_info.departure_time}</div>`;
-      })
-      .join('\n');
+    if (this.data.next_trip) {
+      return this.data.next_trip.stop_info
+        .map(stop_info => {
+          return `<div class="stop-time">${stop_info.departure_time.replace(
+            /(\d+):(\d+):\d+/,
+            (match, hours, minutes) => {
+              return `${hours}:${minutes}`;
+            }
+          )}</div>`;
+        })
+        .join('\n');
+    }
+    return '';
   }
 
   get stopNames() {
-    return this.data.next_trip.stop_info
-      .map(stop_info => {
-        return `<div class="stop-name">${stop_info.stop_name}</div>`;
-      })
-      .join('\n');
+    if (this.data.next_trip) {
+      return this.data.next_trip.stop_info
+        .map(stop_info => {
+          return `<div class="stop-name">${stop_info.stop_name}</div>`;
+        })
+        .join('\n');
+    }
+    return '';
   }
 
   get stopGuide() {
-    switch (this.data.next_trip.stop_info.length) {
-      case 2:
-        return `
+    if (this.data.next_trip) {
+      switch (this.data.next_trip.stop_info.length) {
+        case 2:
+          return `
         <div class="stop-guide">
           <svg width="16px" height="56px" viewBox="0 0 16 56">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -337,8 +222,8 @@ class Card {
             </g>
           </svg>
         </div>`;
-      case 3:
-        return `
+        case 3:
+          return `
         <div class="stop-guide">
           <svg width="16px" height="96px" viewBox="0 0 16 96">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -365,8 +250,8 @@ class Card {
               </g>
           </svg>
         </div>`;
-      case 4:
-        return `
+        case 4:
+          return `
         <div class="stop-guide">
           <svg width="16px" height="136px" viewBox="0 0 16 136">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -399,8 +284,8 @@ class Card {
               </g>
           </svg>
         </div>`;
-      case 5:
-        return `
+        case 5:
+          return `
         <div class="stop-guide">
           <svg width="16px" height="176px" viewBox="0 0 16 176">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -439,6 +324,205 @@ class Card {
               </g>
           </svg>
         </div>`;
+      }
     }
+    return '';
   }
+}
+
+function renderCard(data) {
+  const card = new Card(data);
+  return card.render;
+}
+
+function renderSide(side) {
+  if (side) {
+    return `<div class="side">${side
+      .map(card => {
+        return renderCard(card);
+      })
+      .join('')}</div>`;
+  }
+  return '';
+}
+
+function renderPanels(panels) {
+  if (!panels) {
+    return '';
+  }
+
+  return panels
+    .map(panel => {
+      return `<div class="panel">
+              ${renderSide(panel.left)}
+              ${renderSide(panel.right)}
+            </div>`;
+    })
+    .join('');
+}
+
+function colorToBusMarker(color) {
+  switch (color) {
+    case '86D1D8':
+      return '/images/dashboard/busmarker_blue.png';
+    case '445963':
+      return '/images/dashboard/busmarker_gray.png';
+    case '7BB241':
+      return '/images/dashboard/busmarker_green.png';
+    case '5D6ABF':
+      return '/images/dashboard/busmarker_indigo.png';
+    case 'A8D84E':
+      return '/images/dashboard/busmarker_lime.png';
+    case 'FCBBCB':
+      return '/images/dashboard/busmarker_pink.png';
+    case 'FF5151':
+      return '/images/dashboard/busmarker_red.png';
+    case '25C5D9':
+      return '/images/dashboard/busmarker_sf1.png';
+    case 'FF4081':
+      return '/images/dashboard/busmarker_sf2.png';
+    case 'FFC927':
+      return '/images/dashboard/busmarker_yellow.png';
+  }
+}
+
+function geocodeAddress(address, map, icon, title) {
+  const geocoder = new google.maps.Geocoder();
+  geocoder.geocode({address: address}, (results, status) => {
+    if (status === 'OK') {
+      const marker = new google.maps.Marker({
+        map: map,
+        position: results[0].geometry.location,
+        icon: icon,
+        title: title,
+        optimized: false
+      });
+    } else {
+      console.log(
+        'Geocode was not successful for the following reason: ' + status
+      );
+    }
+  });
+}
+
+function initMap() {
+  const map = new google.maps.Map(document.getElementById('map'), {
+    disableDefaultUI: true,
+    styles: mapStyle
+  });
+
+  // Put I/O on the map
+  geocodeAddress(
+    '1 Amphitheatre Pkwy, Mountain View, CA 94043',
+    map,
+    '/images/dashboard/logo_io_64.png',
+    'Google I/O'
+  );
+
+  const markerManager = new MarkerManager(map);
+  const cardsElement = document.getElementsByClassName('cards')[0];
+  const displayTimeElement = document.getElementsByClassName('display-time')[0];
+  const pageMarkerPanelElts = [
+    document.getElementById('page-marker-panel-0'),
+    document.getElementById('page-marker-panel-1'),
+    document.getElementById('page-marker-panel-2')
+  ];
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+  db.ref('map').on('value', snapshot => {
+    const val = snapshot.val();
+    map.fitBounds({
+      east: val.northEastLng,
+      north: val.northEastLat,
+      south: val.southWestLat,
+      west: val.southWestLng
+    });
+
+    markerManager.clear();
+    val.markers.forEach(marker => {
+      markerManager.add(
+        {
+          lat: marker.lat,
+          lng: marker.lng
+        },
+        marker.iconPath,
+        marker.name
+      );
+    });
+
+    cardsElement.style[
+      'top'
+    ] = `calc(${val.panel * -100}vh - ${val.panel * 64}px)`;
+
+    pageMarkerPanelElts.forEach(elt => {
+      elt.classList.remove('selected');
+    });
+    pageMarkerPanelElts[val.panel].classList.add('selected');
+  });
+
+  db.ref('current-time').on('value', snapshot => {
+    displayTimeElement.textContent = snapshot.val().display;
+  });
+
+  db.ref('panels').on('value', snapshot => {
+    cardsElement.innerHTML = renderPanels(snapshot.val());
+  });
+
+  const busLocationMarkers = {};
+
+  db.ref('bus-locations').on('value', snapshot => {
+    const val = snapshot.val();
+
+    for (let key in busLocationMarkers) {
+      if (val === null || !(key in val)) {
+        const marker = busLocationMarkers[key];
+        marker.setMap(null);
+        delete busLocationMarkers[key];
+      }
+    }
+
+    for (let key in val) {
+      const bus = val[key];
+
+      if (key in busLocationMarkers) {
+        const marker = busLocationMarkers[key];
+        marker.setPosition({
+          lat: bus.lat,
+          lng: bus.lng
+        });
+      } else {
+        const url = colorToBusMarker(bus.route_color);
+        const marker = new google.maps.Marker({
+          position: {
+            lat: bus.lat,
+            lng: bus.lng
+          },
+          map: map,
+          icon: {
+            url,
+            anchor: new google.maps.Point(18, 18)
+          },
+          title: bus.route_name,
+          optimized: false
+        });
+        busLocationMarkers[key] = marker;
+      }
+    }
+  });
+
+  const promoContainerElement = document.getElementsByClassName(
+    'promo-container'
+  )[0];
+
+  db.ref('promo').on('value', snapshot => {
+    const promo = snapshot.val();
+    promoContainerElement.innerHTML = `
+    <div class="promo">
+      <div class="title">What's under the hood</div>
+      <img class="ticker-position" height="12" width="137" src="images/promo/ticker-${promo.position}.png"/>
+      <div class="content">${promo.html}</div>
+    </div>
+    `;
+  });
 }

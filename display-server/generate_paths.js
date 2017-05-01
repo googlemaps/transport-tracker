@@ -13,17 +13,17 @@
  * permissions and limitations under the License.
  */
 
-// Configurables
-// TODO: Add your API Key here
-const mapsApiKey = 'YOUR_API_KEY';
-
-const gtfs = require('./gtfs');
+/*eslint-disable no-shadow-global, unknown-require, no-undef-expression*/
+const mapsApiKey = require('./tracker_configuration.json').mapsApiKey;
+const {GTFS} = require('./gtfs');
+const gtfs = new GTFS();
 const _async = require('asyncawait/async');
 const _await = require('asyncawait/await');
 const Promise = require('bluebird');
 const moment = require('moment');
 const polyline = require('@mapbox/polyline');
 const fs = require('fs');
+const readline = require('readline');
 
 const googleMapsClient = require('@google/maps').createClient({
   key: mapsApiKey,
@@ -33,7 +33,8 @@ const googleMapsClient = require('@google/maps').createClient({
 function generate_paths() {
   const trips = _await(gtfs.getTripsOrderedByTime());
   const tripsWithLocations = [];
-  trips.forEach(trip => {
+  trips.forEach((trip, tripIndex) => {
+    logProgress(`Processing trip ${tripIndex + 1} of ${trips.length}`);
     const timeCursor = moment(
       `${trip.departure_date} ${trip.departure_time}`,
       'YYYYMMDD HH:mm:ss'
@@ -48,11 +49,9 @@ function generate_paths() {
     if (stops.length > 2) {
       request['waypoints'] = stops.slice(1, -1);
     }
-    console.log(request);
-    var response = _await(
-      googleMapsClient.directions(request).asPromise()
-    ).json;
-    if (response.status == 'OK') {
+    var response = _await(googleMapsClient.directions(request).asPromise())
+      .json;
+    if (response.status === 'OK') {
       const route = response.routes[0];
       route.legs.forEach(leg => {
         leg.steps.forEach(step => {
@@ -73,7 +72,16 @@ function generate_paths() {
       console.log('ERROR');
     }
   });
-  fs.writeFileSync('paths.json', JSON.stringify(tripsWithLocations, null, 2));
+  fs.writeFileSync('paths.json', JSON.stringify(tripsWithLocations));
+  logProgress('Paths written successfully to paths.json.');
+  process.stdout.write('\n');
+}
+
+function logProgress(str) {
+  // A little bit of readline magic to not fill the screen with progress messages.
+  readline.clearLine(process.stdout, 0);
+  readline.cursorTo(process.stdout, 0, null);
+  process.stdout.write(str);
 }
 
 _async(() => {

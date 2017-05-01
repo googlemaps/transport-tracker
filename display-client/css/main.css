@@ -1,3 +1,17 @@
+/*
+ * Copyright 2017 Google Inc. All rights reserved.
+ *
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
+ * file except in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+ * ANY KIND, either express or implied. See the License for the specific language governing
+ * permissions and limitations under the License.
+ */
 html,
 body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
@@ -60,6 +74,49 @@ body {
   left: calc(50vw -  80px );
   font-size: 18px;
   color: rgba(255, 255, 255, 0.97);
+}
+/*
+ * Promo
+ */
+.promo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.promo {
+  position: absolute;
+  right: 32px;
+  bottom: 36px;
+  width: 375px;
+  height: 154px;
+  background-color: #445A65;
+}
+.promo .title {
+  position: absolute;
+  left: 18px;
+  top: 21px;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 500;
+  font-size: 12pt;
+  color: #fff;
+}
+.promo .ticker-position {
+  position: absolute;
+  right: 18px;
+  top: 21px;
+}
+.promo .content {
+  position: absolute;
+  right: 18px;
+  left: 18px;
+  top: 54px;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 300;
+  font-size: 15pt;
+  color: #fff;
 }
 /*
  * Card definitions

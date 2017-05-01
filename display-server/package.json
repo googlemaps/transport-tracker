@@ -1,14 +1,16 @@
 {
-  "name": "display-server",
+  "name": "transport-tracker-server",
   "version": "1.0.0",
-  "description": "This program updates the trip times based on bus location.",
+  "description": "The backend component of the Transport Tracker",
   "scripts": {
-    "main": "nodemon main.js",
+    "main": "node main.js",
+    "debug": "node --inspect --debug-brk main.js",
     "test": "mocha",
     "coverage": "istanbul cover _mocha -- -R spec",
     "generate_paths": "node generate_paths.js",
     "prettier": "for file in *.js test/*.js; do prettier --write --single-quote --bracket-spacing=false $file; done",
-    "typings": "typings install"
+    "typings": "typings install",
+    "check-updates": "npm-check-updates -u -a && npm install"
   },
   "repository": {
     "type": "git",
@@ -20,21 +22,21 @@
     "@google/maps": "^0.3.1",
     "@mapbox/polyline": "^0.2.0",
     "asyncawait": "^1.0.6",
-    "bluebird": "^3.4.6",
-    "csv": "^1.1.0",
-    "firebase-admin": "^4.0.3",
-    "moment": "^2.17.0",
-    "nodemon": "^1.11.0",
-    "sqlite3": "^3.1.4"
+    "bluebird": "^3.5.0",
+    "csv-parse": "^1.2.0",
+    "firebase-admin": "^4.2.1",
+    "moment": "^2.18.1",
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.15.0",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
     "istanbul": "^0.4.5",
     "jshint": "^2.9.4",
-    "mocha": "^3.2.0",
-    "prettier": "0.16.0",
-    "typescript": "^2.1.4",
-    "typings": "^2.0.0"
+    "mocha": "^3.3.0",
+    "npm-check-updates": "^2.11.0",
+    "prettier": "^1.2.2",
+    "typescript": "^2.3.1",
+    "typings": "^2.1.1"
   }
 }
