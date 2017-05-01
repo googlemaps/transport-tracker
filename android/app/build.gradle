@@ -21,7 +21,7 @@ android {
 
 ext {
     support = '23.2.0'
-    playServices = '10.0.1'
+    playServices = '10.2.4'
 }
 
 dependencies {
