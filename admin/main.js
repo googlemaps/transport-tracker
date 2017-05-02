@@ -28,7 +28,7 @@ var app = firebase.initializeApp({
 
 var database = app.database();
 
-database.ref('locations').on('value', function(data) {
+database.ref('raw-locations').on('value', function(data) {
 
   $('#loading').hide();
 

@@ -21,7 +21,7 @@
     <string name="auth_failed">Firebase authentication failed</string>
     <string name="confirm_stop">Do you really want to disable location tracking?</string>
 
-    <string name="firebase_path" translatable="false">locations/</string>
+    <string name="firebase_path" translatable="false">raw-locations/</string>
     <string name="prefs" translatable="false">prefs</string>
     <string name="transport_id" translatable="false">transport_id</string>
     <string name="email" translatable="false">email</string>
