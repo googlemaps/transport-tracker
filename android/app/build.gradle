@@ -10,6 +10,9 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        resValue "string", "build_transport_id", (project.findProperty("build_transport_id") ?: "")
+        resValue "string", "build_email", (project.findProperty("build_email") ?: "")
+        resValue "string", "build_password", (project.findProperty("build_password") ?: "")
     }
 
     packagingOptions {
