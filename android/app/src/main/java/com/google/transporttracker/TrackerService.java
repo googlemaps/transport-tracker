@@ -76,7 +76,6 @@ public class TrackerService extends Service implements LocationListener {
     private GoogleApiClient mGoogleApiClient;
     private DatabaseReference mFirebaseTransportRef;
     private FirebaseRemoteConfig mFirebaseRemoteConfig;
-    private Intent mBatteryLevel;
     private LinkedList<Map<String, Object>> mTransportStatuses = new LinkedList<>();
     private NotificationManager mNotificationManager;
     private NotificationCompat.Builder mNotificationBuilder;
@@ -224,8 +223,6 @@ public class TrackerService extends Service implements LocationListener {
      * requesting location updates.
      */
     private void startLocationTracking() {
-        mBatteryLevel = this.registerReceiver(null, new IntentFilter(
-                Intent.ACTION_BATTERY_CHANGED));
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(mLocationRequestCallback)
                 .addApi(LocationServices.API)
@@ -252,11 +249,13 @@ public class TrackerService extends Service implements LocationListener {
     }
 
     private float getBatteryLevel() {
+        Intent batteryStatus = registerReceiver(null,
+                new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
         int batteryLevel = -1;
         int batteryScale = 1;
-        if (mBatteryLevel != null) {
-            batteryLevel = mBatteryLevel.getIntExtra(BatteryManager.EXTRA_LEVEL, batteryLevel);
-            batteryScale = mBatteryLevel.getIntExtra(BatteryManager.EXTRA_SCALE, batteryScale);
+        if (batteryStatus != null) {
+            batteryLevel = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, batteryLevel);
+            batteryScale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, batteryScale);
         }
         return batteryLevel / (float) batteryScale * 100;
     }
