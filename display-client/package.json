@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "main": "gulp serve",
-    "prettier": "prettier --write --single-quote --bracket-spacing=false js/index.js",
-    "typings": "typings install"
+    "prettier": "prettier --write --single-quote --bracket-spacing=false *.js js/*.js",
+    "typings": "typings install",
+    "check-updates": "npm-check-updates -u -a && npm install"
   },
   "repository": {
     "type": "git",
@@ -16,13 +17,14 @@
   "license": "Apache-2.0",
   "dependencies": {},
   "devDependencies": {
-    "babel-eslint": "^7.1.0",
-    "eslint": "^3.10.2",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.0",
     "gulp-serve": "^1.4.0",
-    "prettier": "0.16.0",
-    "typescript": "^2.1.4",
-    "typings": "^2.0.0"
+    "npm-check-updates": "^2.11.0",
+    "prettier": "^1.2.2",
+    "typescript": "^2.3.1",
+    "typings": "^2.1.1"
   }
 }
