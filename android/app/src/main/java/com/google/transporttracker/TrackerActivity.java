@@ -97,6 +97,11 @@ public class TrackerActivity extends AppCompatActivity {
         } else if (transportID.length() > 0 && email.length() > 0 && password.length() > 0) {
             // Inputs have previously been stored, start validation.
             checkLocationPermission();
+        } else {
+            // First time running - check for inputs pre-populated from build.
+            mTransportIdEditText.setText(getString(R.string.build_transport_id));
+            mEmailEditText.setText(getString(R.string.build_email));
+            mPasswordEditText.setText(getString(R.string.build_password));
         }
 
     }
