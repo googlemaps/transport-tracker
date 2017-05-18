@@ -28,8 +28,7 @@ Firebase database and draws them on the LCD TV.
 
 ## Getting started
 
-Please refer to the README file for each component, for information about
-API keys and other setup guides.
+See the [developer documentation](https://developers.google.com/maps/solutions/transport-tracker/start).
 
 ## Directories in this repo
 
