@@ -14,7 +14,7 @@
  */
 
 /* eslint-disable unknown-require */
-const moment = require('moment');
+const moment = require('moment-timezone');
 const _async = require('asyncawait/async');
 const _await = require('asyncawait/await');
 
@@ -94,8 +94,8 @@ exports.TimeTable = class {
       return m.startOf('minute');
     }
 
-    const date = now.format('YYYYMMDD');
-    const time = now.format('HH:mm:ss');
+    const date = now.tz('America/Los_Angeles').format('YYYYMMDD');
+    const time = now.tz('America/Los_Angeles').format('HH:mm:ss');
     const route = _await(this.gtfs.getRouteById(route_id));
     const nextTrips = _await(
       this.gtfs.getNextThreeTripsForRoute(route_id, date, time)
@@ -113,9 +113,10 @@ exports.TimeTable = class {
         this.haveDirectionsResponseCachedForTrip(returnValue.next_trip.trip)
       ) {
         const ptt = this.directionsResponseForTrip(returnValue.next_trip.trip);
-        const time = moment.utc(
+        const time = moment.tz(
           `${next_trip.stop_info[0].date} ${next_trip.stop_info[0].departure_time}`,
-          DATE_FORMAT
+          DATE_FORMAT,
+          'America/Los_Angeles'
         );
         let index = 1;
         ptt.routes[0].legs.forEach(leg => {
@@ -130,7 +131,11 @@ exports.TimeTable = class {
         });
       }
       const next_trip_time_str = `${next_trip.stop_info[0].date} ${next_trip.stop_info[0].departure_time}`;
-      const next_trip_time = moment.utc(next_trip_time_str, DATE_FORMAT);
+      const next_trip_time = moment.tz(
+        next_trip_time_str,
+        DATE_FORMAT,
+        'America/Los_Angeles'
+      );
       const next_trip_delta = next_trip_time.diff(now, 'minutes');
       if (next_trip_delta <= 120) {
         returnValue['leaving_in_label'] = 'Leaving in';
@@ -147,9 +152,10 @@ exports.TimeTable = class {
             trip_after = _await(this.tripLookup(nextTrips[2]));
           }
 
-          const trip_after_time = moment.utc(
+          const trip_after_time = moment.tz(
             `${trip_after.stop_info[0].date} ${trip_after.stop_info[0].departure_time}`,
-            DATE_FORMAT
+            DATE_FORMAT,
+            'America/Los_Angeles'
           );
           returnValue['next_in_label'] = 'Next in';
           const trip_after_delta = trip_after_time.diff(now, 'minutes');

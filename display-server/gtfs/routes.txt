@@ -1,14 +1,11 @@
 route_type,route_id,route_short_name,route_long_name,agency_id,route_color,route_text_color
-3,11,,San Francisco Airport (SFO),1,445963,FFFFFF
-3,10,,Millbrae BART,1,445963,FFFFFF
-3,12,,San José Airport (SJC),1,445963,FFFFFF
-3,1,,Green Route,1,7BB241,000000
-3,0,,Yellow Route,1,FFC927,000000
-3,3,,Blue Route,1,86D1D8,000000
-3,2,,Pink Route,1,FCBBCB,000000
-3,5,,Red Route,1,FF5151,000000
-3,4,,Indigo Route,1,5D6ABF,FFFFFF
-3,7,,MTV Caltrain Route,1,445963,FFFFFF
-3,6,,Lime Route,1,A8D84E,000000
-3,9,,San Francisco 2 Route,1,FF4081,000000
-3,8,,San Francisco 1 Route,1,25C5D9,000000
+3,0,Yellow,"Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, Palo Alto Caltrain",1,FCE444,000000
+3,1,Lime,"Avatar Hotel, Plaza Suites",1,C4E86B,000000
+3,2,Teal,"Aloft Sunnyvale, Wild Palms",1,00C1DE,FFFFFF
+3,3,Orange,"Towneplace, Hotel Avante",1,FFAD00,000000
+3,4,Indigo,Country Inn & Suites,1,0061C8,FFFFFF
+3,5,MTV,Mountain View Caltrain,1,8A8A8D,FFFFFF
+3,6,SF,San Francisco Shuttle,1,EA1D76,FFFFFF
+3,7,,Millbrae BART,1,8A8A8D,FFFFFF
+3,8,SFO,San Francisco Airport,1,8A8A8D,FFFFFF
+3,9,SJC,San José Airport,1,8A8A8D,FFFFFF

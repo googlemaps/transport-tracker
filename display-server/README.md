@@ -29,20 +29,25 @@ To configure which Firebase Realtime Database URL to use to communicate with
 To install library dependencies, use Node Package Manager.
 
 ```bash
-$ npm install
+npm install
 ```
 
 To run the server, again use npm.
 
 ```bash
-$ npm run main
+npm run main
 ```
 
 ## Testing
 
-Please run the following to run the tests, and generate a coverage report.
+Please run the following to run the tests:
 
 ```bash
-$ npm test
-$ npm run coverage
+npm test
+```
+
+And generate a coverage report:
+
+```bash
+npm run coverage
 ```

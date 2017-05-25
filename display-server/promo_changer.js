@@ -48,7 +48,7 @@ exports.PromoChanger = class {
     // Change the promo once every five seconds
     this.timeTimerId = setInterval(() => {
       this.promoAdvance();
-    }, 5000);
+    }, 10000);
   }
 
   promoAdvance() {

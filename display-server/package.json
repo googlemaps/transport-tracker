@@ -4,7 +4,7 @@
   "description": "The backend component of the Transport Tracker",
   "scripts": {
     "main": "node main.js",
-    "debug": "node --inspect --debug-brk main.js",
+    "debug": "node --debug-brk main.js",
     "test": "mocha",
     "coverage": "istanbul cover _mocha -- -R spec",
     "generate_paths": "node generate_paths.js",
@@ -26,6 +26,7 @@
     "csv-parse": "^1.2.0",
     "firebase-admin": "^4.2.1",
     "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
     "sqlite3": "^3.1.8"
   },
   "devDependencies": {
@@ -36,7 +37,7 @@
     "mocha": "^3.3.0",
     "npm-check-updates": "^2.11.0",
     "prettier": "^1.2.2",
-    "typescript": "^2.3.1",
+    "typescript": "^2.3.2",
     "typings": "^2.1.1"
   }
 }

@@ -27,7 +27,7 @@ exports.PanelChanger = class {
     // Change the panel once every ten seconds
     this.timeTimerId = setInterval(() => {
       this.panelAdvance();
-    }, 10000);
+    }, 20000);
   }
 
   panelAdvance() {

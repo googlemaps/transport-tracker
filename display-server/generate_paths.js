@@ -72,7 +72,7 @@ function generate_paths() {
       console.log('ERROR');
     }
   });
-  fs.writeFileSync('paths.json', JSON.stringify(tripsWithLocations));
+  fs.writeFileSync('paths.json', JSON.stringify(tripsWithLocations, null, 2));
   logProgress('Paths written successfully to paths.json.');
   process.stdout.write('\n');
 }
