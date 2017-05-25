@@ -1,0 +1,129 @@
+[{
+    "panel": 0,
+    "routesGroups": [
+      [0],
+      [3, 5]
+    ],
+    "markers": [
+      {
+        "lat": 37.40935,
+        "lng": -122.12266,
+        "iconPath": "/images/dashboard/ic_place_yellow.png",
+        "name": "Hilton Garden Inn Palo Alto"
+      },
+      {
+        "lat": 37.44129,
+        "lng": -122.163991,
+        "iconPath": "/images/dashboard/ic_place_yellow.png",
+        "name": "Sheraton Palo Alto"
+      },
+      {
+        "lat": 37.44291,
+        "lng": -122.164276,
+        "iconPath": "/images/dashboard/ic_place_yellow.png",
+        "name": "Palo Alto Caltrain"
+      },
+      {
+        "lat": 37.372713,
+        "lng": -122.05658,
+        "iconPath": "/images/dashboard/ic_place_orange.png",
+        "name": "Towneplace"
+      },
+      {
+        "lat": 37.37613,
+        "lng": -122.06106,
+        "iconPath": "/images/dashboard/ic_place_orange.png",
+        "name": "Hotel Avante"
+      },
+      {
+        "lat": 37.394109,
+        "lng": -122.076628,
+        "iconPath": "/images/dashboard/ic_place_caltrain.png",
+        "name": "Mountain View Caltrain"
+      }
+    ],
+    "southWestLat": 37.332687,
+    "southWestLng": -122.16427599999997,
+    "northEastLat": 37.48,
+    "northEastLng": -122.00200000000001
+  },
+  {
+    "panel": 1,
+    "routesGroups": [
+      [1, 2],
+      [4]
+    ],
+    "markers": [
+      {
+        "lat": 37.39203,
+        "lng": -121.977776,
+        "iconPath": "/images/dashboard/ic_place_lime.png",
+        "name": "Avatar Hotel"
+      },
+      {
+        "lat": 37.387,
+        "lng": -121.98322,
+        "iconPath": "/images/dashboard/ic_place_lime.png",
+        "name": "Plaza Suites"
+      },
+      {
+        "lat": 37.376305,
+        "lng": -122.029151,
+        "iconPath": "/images/dashboard/ic_place_teal.png",
+        "name": "Aloft Sunnyvale"
+      },
+      {
+        "lat": 37.352013,
+        "lng": -122.01318,
+        "iconPath": "/images/dashboard/ic_place_teal.png",
+        "name": "Wild Palms Hotel"
+      },
+      {
+        "lat": 37.40988,
+        "lng": -122.00213,
+        "iconPath": "/images/dashboard/ic_place_indigo.png",
+        "name": "Country Inn & Suites"
+      }
+    ],
+    "southWestLat": 37.383606,
+    "southWestLng": -122.15,
+    "northEastLat": 37.4263,
+    "northEastLng": -121.96232600000002
+  },
+  {
+    "panel": 2,
+    "routesGroups": [
+      [6, 7],
+      [8, 9]
+    ],
+    "markers": [{
+        "lat": 37.794075,
+        "lng": -122.395454,
+        "iconPath": "/images/dashboard/ic_place_sf.png",
+        "name": "Hyatt Regency SF"
+      },
+      {
+        "lat": 37.600426,
+        "lng": -122.385864,
+        "iconPath": "/images/dashboard/ic_place_caltrain.png",
+        "name": "Millbrae BART Station"
+      },
+      {
+        "lat": 37.616764,
+        "lng": -122.38395,
+        "iconPath": "/images/dashboard/ic_place_caltrain.png",
+        "name": "San Francisco Airport (SFO)"
+      },
+      {
+        "lat": 37.367252,
+        "lng": -121.92668,
+        "iconPath": "/images/dashboard/ic_place_caltrain.png",
+        "name": "San José Airport (SJC)"
+      }
+    ],
+    "southWestLat": 37.367252,
+    "southWestLng": -122.5,
+    "northEastLat": 37.81,
+    "northEastLng": -121.92668000000003
+  }
+]

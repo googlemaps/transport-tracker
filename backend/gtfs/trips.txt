@@ -1,0 +1,619 @@
+route_id,trip_id,trip_headsign,service_id
+3,344,To Hotel Avante & Grand Hotel,1
+0,0,To Shoreline Amphitheatre,1
+3,346,To Hotel Avante & Grand Hotel,1
+3,347,To Hotel Avante & Grand Hotel,1
+3,340,To Hotel Avante & Grand Hotel,1
+3,341,To Hotel Avante & Grand Hotel,1
+3,342,To Hotel Avante & Grand Hotel,1
+3,343,To Hotel Avante & Grand Hotel,1
+3,348,To Hotel Avante & Grand Hotel,1
+3,349,To Hotel Avante & Grand Hotel,1
+4,595,To Country Inn & Suites by Carlson,0
+4,606,To Country Inn & Suites by Carlson,0
+4,594,To Country Inn & Suites by Carlson,0
+1,298,"To Avatar Hotel, Plaza Suites",3
+1,299,"To Avatar Hotel, Plaza Suites",3
+1,296,"To Avatar Hotel, Plaza Suites",2
+1,297,"To Avatar Hotel, Plaza Suites",3
+1,294,"To Avatar Hotel, Plaza Suites",2
+1,295,"To Avatar Hotel, Plaza Suites",2
+1,292,"To Avatar Hotel, Plaza Suites",2
+1,293,"To Avatar Hotel, Plaza Suites",2
+1,290,"To Avatar Hotel, Plaza Suites",2
+1,291,"To Avatar Hotel, Plaza Suites",2
+3,591,To Hotel Avante & Grand Hotel,0
+3,590,To Hotel Avante & Grand Hotel,0
+4,593,To Country Inn & Suites by Carlson,0
+4,592,To Country Inn & Suites by Carlson,0
+5,199,To Mountain View Caltrain,2
+5,198,To Mountain View Caltrain,2
+4,597,To Country Inn & Suites by Carlson,0
+4,596,To Country Inn & Suites by Carlson,0
+5,195,To Mountain View Caltrain,2
+5,194,To Mountain View Caltrain,2
+5,197,To Mountain View Caltrain,2
+5,196,To Mountain View Caltrain,2
+5,191,To Mountain View Caltrain,2
+5,190,To Mountain View Caltrain,2
+5,193,To Mountain View Caltrain,2
+5,192,To Mountain View Caltrain,2
+1,270,"To Avatar Hotel, Plaza Suites",1
+1,271,"To Avatar Hotel, Plaza Suites",1
+1,272,"To Avatar Hotel, Plaza Suites",1
+1,273,"To Avatar Hotel, Plaza Suites",1
+1,274,"To Avatar Hotel, Plaza Suites",1
+1,275,"To Avatar Hotel, Plaza Suites",1
+1,276,"To Avatar Hotel, Plaza Suites",1
+1,277,"To Avatar Hotel, Plaza Suites",1
+1,278,"To Avatar Hotel, Plaza Suites",1
+1,279,"To Avatar Hotel, Plaza Suites",1
+1,524,"To Avatar Hotel, Plaza Suites",0
+1,525,"To Avatar Hotel, Plaza Suites",0
+1,526,"To Avatar Hotel, Plaza Suites",0
+1,527,"To Avatar Hotel, Plaza Suites",0
+1,520,"To Avatar Hotel, Plaza Suites",0
+1,521,"To Avatar Hotel, Plaza Suites",0
+1,522,"To Avatar Hotel, Plaza Suites",0
+1,523,"To Avatar Hotel, Plaza Suites",0
+4,599,To Country Inn & Suites by Carlson,0
+1,528,"To Avatar Hotel, Plaza Suites",0
+1,529,"To Avatar Hotel, Plaza Suites",0
+8,449,San Francisco International Airport,3
+8,448,San Francisco International Airport,3
+6,443,"Hyatt Regency Embarcadero, via Millbrae BART",3
+6,442,"Hyatt Regency Embarcadero, via Millbrae BART",3
+6,441,"Hyatt Regency Embarcadero, via Millbrae BART",3
+6,440,"Hyatt Regency Embarcadero, via Millbrae BART",3
+8,447,San Francisco International Airport,3
+8,446,San Francisco International Airport,3
+6,445,"Hyatt Regency Embarcadero, via Millbrae BART",3
+6,444,"Hyatt Regency Embarcadero, via Millbrae BART",3
+3,108,To Shoreline Amphitheatre,3
+3,109,To Shoreline Amphitheatre,3
+3,102,To Shoreline Amphitheatre,2
+3,103,To Shoreline Amphitheatre,2
+3,100,To Shoreline Amphitheatre,1
+3,101,To Shoreline Amphitheatre,1
+3,106,To Shoreline Amphitheatre,3
+3,107,To Shoreline Amphitheatre,3
+3,104,To Shoreline Amphitheatre,2
+3,105,To Shoreline Amphitheatre,2
+0,39,To Shoreline Amphitheatre,3
+0,38,To Shoreline Amphitheatre,3
+0,33,To Shoreline Amphitheatre,2
+0,32,To Shoreline Amphitheatre,2
+0,31,To Shoreline Amphitheatre,2
+0,30,To Shoreline Amphitheatre,2
+0,37,To Shoreline Amphitheatre,3
+0,36,To Shoreline Amphitheatre,3
+0,35,To Shoreline Amphitheatre,3
+0,34,To Shoreline Amphitheatre,3
+6,438,"Hyatt Regency Embarcadero, via Millbrae BART",3
+6,439,"Hyatt Regency Embarcadero, via Millbrae BART",3
+6,436,"Hyatt Regency Embarcadero, via Millbrae BART",2
+6,437,"Hyatt Regency Embarcadero, via Millbrae BART",2
+6,434,"Hyatt Regency Embarcadero, via Millbrae BART",2
+6,435,"Hyatt Regency Embarcadero, via Millbrae BART",2
+6,432,"Hyatt Regency Embarcadero, via Millbrae BART",2
+6,433,"Hyatt Regency Embarcadero, via Millbrae BART",2
+6,430,"Hyatt Regency Embarcadero, via Millbrae BART",2
+6,431,"Hyatt Regency Embarcadero, via Millbrae BART",2
+2,339,"To The Aloft Sunnyvale, Wild Palms Hotel",3
+2,338,"To The Aloft Sunnyvale, Wild Palms Hotel",3
+2,335,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,334,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,337,"To The Aloft Sunnyvale, Wild Palms Hotel",3
+2,336,"To The Aloft Sunnyvale, Wild Palms Hotel",3
+2,331,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,330,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,333,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,332,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+3,345,To Hotel Avante & Grand Hotel,1
+0,6,To Shoreline Amphitheatre,2
+3,99,To Shoreline Amphitheatre,1
+3,98,To Shoreline Amphitheatre,3
+3,91,To Shoreline Amphitheatre,2
+3,90,To Shoreline Amphitheatre,2
+3,93,To Shoreline Amphitheatre,2
+3,92,To Shoreline Amphitheatre,2
+3,95,To Shoreline Amphitheatre,3
+3,94,To Shoreline Amphitheatre,3
+3,97,To Shoreline Amphitheatre,3
+3,96,To Shoreline Amphitheatre,3
+2,559,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,558,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,555,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,554,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,557,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,556,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,551,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,550,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,553,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,552,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+0,238,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,239,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,234,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,235,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,236,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,237,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,230,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,231,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,232,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,233,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,1,To Shoreline Amphitheatre,1
+4,614,To Country Inn & Suites by Carlson,0
+5,146,To Shoreline Amphitheatre,1
+5,147,To Shoreline Amphitheatre,1
+5,144,To Shoreline Amphitheatre,1
+5,145,To Shoreline Amphitheatre,1
+5,142,To Shoreline Amphitheatre,1
+5,143,To Shoreline Amphitheatre,1
+5,140,To Shoreline Amphitheatre,1
+5,141,To Shoreline Amphitheatre,1
+4,612,To Country Inn & Suites by Carlson,0
+4,613,To Country Inn & Suites by Carlson,0
+4,610,To Country Inn & Suites by Carlson,0
+4,611,To Country Inn & Suites by Carlson,0
+4,616,To Country Inn & Suites by Carlson,0
+4,617,To Country Inn & Suites by Carlson,0
+5,148,To Shoreline Amphitheatre,1
+5,149,To Shoreline Amphitheatre,1
+6,133,To Shoreline Amphitheatre,2
+6,132,To Shoreline Amphitheatre,1
+6,131,To Shoreline Amphitheatre,1
+6,130,To Shoreline Amphitheatre,1
+6,137,To Shoreline Amphitheatre,3
+6,136,To Shoreline Amphitheatre,3
+6,135,To Shoreline Amphitheatre,2
+6,134,To Shoreline Amphitheatre,2
+0,494,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,495,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+5,139,To Shoreline Amphitheatre,1
+6,138,To Shoreline Amphitheatre,3
+0,490,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,491,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,492,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,493,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,24,To Shoreline Amphitheatre,3
+0,25,To Shoreline Amphitheatre,3
+0,26,To Shoreline Amphitheatre,3
+0,27,To Shoreline Amphitheatre,1
+0,20,To Shoreline Amphitheatre,3
+0,21,To Shoreline Amphitheatre,3
+0,22,To Shoreline Amphitheatre,3
+0,23,To Shoreline Amphitheatre,3
+0,28,To Shoreline Amphitheatre,1
+0,29,To Shoreline Amphitheatre,1
+4,407,To Country Inn & Suites by Carlson,2
+4,406,To Country Inn & Suites by Carlson,2
+4,405,To Country Inn & Suites by Carlson,2
+4,404,To Country Inn & Suites by Carlson,2
+4,403,To Country Inn & Suites by Carlson,2
+4,402,To Country Inn & Suites by Carlson,2
+4,401,To Country Inn & Suites by Carlson,2
+4,400,To Country Inn & Suites by Carlson,2
+4,409,To Country Inn & Suites by Carlson,2
+4,408,To Country Inn & Suites by Carlson,2
+4,379,To Country Inn & Suites by Carlson,1
+3,378,To Hotel Avante & Grand Hotel,3
+3,371,To Hotel Avante & Grand Hotel,2
+3,370,To Hotel Avante & Grand Hotel,2
+3,373,To Hotel Avante & Grand Hotel,2
+3,372,To Hotel Avante & Grand Hotel,2
+3,375,To Hotel Avante & Grand Hotel,3
+3,374,To Hotel Avante & Grand Hotel,2
+3,377,To Hotel Avante & Grand Hotel,3
+3,376,To Hotel Avante & Grand Hotel,3
+4,393,To Country Inn & Suites by Carlson,1
+4,392,To Country Inn & Suites by Carlson,1
+3,88,To Shoreline Amphitheatre,1
+3,89,To Shoreline Amphitheatre,1
+4,397,To Country Inn & Suites by Carlson,2
+4,396,To Country Inn & Suites by Carlson,1
+4,395,To Country Inn & Suites by Carlson,1
+4,394,To Country Inn & Suites by Carlson,1
+2,82,To Shoreline Amphitheatre,3
+2,83,To Shoreline Amphitheatre,3
+2,80,To Shoreline Amphitheatre,2
+2,81,To Shoreline Amphitheatre,2
+2,86,To Shoreline Amphitheatre,3
+3,87,To Shoreline Amphitheatre,1
+2,84,To Shoreline Amphitheatre,3
+2,85,To Shoreline Amphitheatre,3
+0,7,To Shoreline Amphitheatre,2
+4,601,To Country Inn & Suites by Carlson,0
+4,607,To Country Inn & Suites by Carlson,0
+3,586,To Hotel Avante & Grand Hotel,0
+3,587,To Hotel Avante & Grand Hotel,0
+3,584,To Hotel Avante & Grand Hotel,0
+3,585,To Hotel Avante & Grand Hotel,0
+3,582,To Hotel Avante & Grand Hotel,0
+3,583,To Hotel Avante & Grand Hotel,0
+3,580,To Hotel Avante & Grand Hotel,0
+3,581,To Hotel Avante & Grand Hotel,0
+3,588,To Hotel Avante & Grand Hotel,0
+3,589,To Hotel Avante & Grand Hotel,0
+0,245,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,244,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,247,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,246,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,241,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,240,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,243,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,242,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+4,615,To Country Inn & Suites by Carlson,0
+0,249,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,248,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+1,519,"To Avatar Hotel, Plaza Suites",0
+1,518,"To Avatar Hotel, Plaza Suites",0
+0,511,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,510,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,513,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,512,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+1,515,"To Avatar Hotel, Plaza Suites",0
+1,514,"To Avatar Hotel, Plaza Suites",0
+1,517,"To Avatar Hotel, Plaza Suites",0
+1,516,"To Avatar Hotel, Plaza Suites",0
+9,458,Mineta San José International Airport,3
+9,459,Mineta San José International Airport,3
+8,450,San Francisco International Airport,3
+8,451,San Francisco International Airport,3
+8,452,San Francisco International Airport,3
+8,453,San Francisco International Airport,3
+9,454,Mineta San José International Airport,3
+9,455,Mineta San José International Airport,3
+9,456,Mineta San José International Airport,3
+9,457,Mineta San José International Airport,3
+5,179,To Shoreline Amphitheatre,2
+5,178,To Shoreline Amphitheatre,2
+5,177,To Shoreline Amphitheatre,2
+5,176,To Shoreline Amphitheatre,2
+5,175,To Shoreline Amphitheatre,2
+5,174,To Shoreline Amphitheatre,2
+5,173,To Shoreline Amphitheatre,2
+5,172,To Shoreline Amphitheatre,2
+5,171,To Shoreline Amphitheatre,2
+5,170,To Mountain View Caltrain,1
+0,253,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+5,182,To Shoreline Amphitheatre,2
+5,183,To Shoreline Amphitheatre,2
+5,180,To Shoreline Amphitheatre,2
+5,181,To Shoreline Amphitheatre,2
+5,186,To Shoreline Amphitheatre,2
+5,187,To Shoreline Amphitheatre,2
+5,184,To Shoreline Amphitheatre,2
+5,185,To Shoreline Amphitheatre,2
+5,188,To Shoreline Amphitheatre,2
+5,189,To Shoreline Amphitheatre,2
+0,11,To Shoreline Amphitheatre,2
+0,10,To Shoreline Amphitheatre,2
+0,13,To Shoreline Amphitheatre,2
+0,12,To Shoreline Amphitheatre,2
+0,15,To Shoreline Amphitheatre,2
+0,14,To Shoreline Amphitheatre,2
+0,17,To Shoreline Amphitheatre,3
+0,16,To Shoreline Amphitheatre,3
+0,19,To Shoreline Amphitheatre,3
+0,18,To Shoreline Amphitheatre,3
+1,62,To Shoreline Amphitheatre,3
+2,322,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,323,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,320,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,321,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,326,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,327,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,324,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,325,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,328,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,329,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+5,201,To Mountain View Caltrain,2
+5,200,To Mountain View Caltrain,2
+5,203,To Shoreline Amphitheatre,3
+5,202,To Mountain View Caltrain,2
+5,205,To Shoreline Amphitheatre,3
+5,204,To Shoreline Amphitheatre,3
+5,207,To Shoreline Amphitheatre,3
+5,206,To Shoreline Amphitheatre,3
+5,209,To Shoreline Amphitheatre,3
+5,208,To Shoreline Amphitheatre,3
+2,77,To Shoreline Amphitheatre,1
+2,76,To Shoreline Amphitheatre,1
+2,75,To Shoreline Amphitheatre,3
+2,74,To Shoreline Amphitheatre,3
+2,73,To Shoreline Amphitheatre,3
+2,72,To Shoreline Amphitheatre,3
+2,71,To Shoreline Amphitheatre,3
+2,70,To Shoreline Amphitheatre,2
+2,79,To Shoreline Amphitheatre,2
+2,78,To Shoreline Amphitheatre,1
+0,2,To Shoreline Amphitheatre,1
+2,542,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,543,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,540,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,541,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,546,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,547,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,544,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,545,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+0,8,To Shoreline Amphitheatre,2
+2,548,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,549,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,68,To Shoreline Amphitheatre,2
+4,598,To Country Inn & Suites by Carlson,0
+4,120,To Shoreline Amphitheatre,3
+4,121,To Shoreline Amphitheatre,3
+4,122,To Shoreline Amphitheatre,3
+4,123,To Shoreline Amphitheatre,3
+7,124,To Shoreline Amphitheatre,1
+7,125,To Shoreline Amphitheatre,1
+7,126,To Shoreline Amphitheatre,2
+7,127,To Shoreline Amphitheatre,2
+7,128,To Shoreline Amphitheatre,3
+7,129,To Shoreline Amphitheatre,3
+4,414,To Country Inn & Suites by Carlson,3
+4,415,To Country Inn & Suites by Carlson,3
+4,416,To Country Inn & Suites by Carlson,3
+4,417,To Country Inn & Suites by Carlson,3
+4,410,To Country Inn & Suites by Carlson,2
+4,411,To Country Inn & Suites by Carlson,2
+4,412,To Country Inn & Suites by Carlson,2
+4,413,To Country Inn & Suites by Carlson,2
+0,498,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+6,418,"Hyatt Regency Embarcadero, via Millbrae BART",1
+6,419,"Hyatt Regency Embarcadero, via Millbrae BART",1
+0,499,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+2,319,"To The Aloft Sunnyvale, Wild Palms Hotel",2
+2,318,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,313,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,312,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,311,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,310,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,317,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,316,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,315,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,314,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+0,496,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,497,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,3,To Shoreline Amphitheatre,1
+3,368,To Hotel Avante & Grand Hotel,2
+3,369,To Hotel Avante & Grand Hotel,2
+3,366,To Hotel Avante & Grand Hotel,2
+3,367,To Hotel Avante & Grand Hotel,2
+3,364,To Hotel Avante & Grand Hotel,2
+3,365,To Hotel Avante & Grand Hotel,2
+3,362,To Hotel Avante & Grand Hotel,2
+3,363,To Hotel Avante & Grand Hotel,2
+3,360,To Hotel Avante & Grand Hotel,2
+3,361,To Hotel Avante & Grand Hotel,2
+4,380,To Country Inn & Suites by Carlson,1
+4,381,To Country Inn & Suites by Carlson,1
+4,382,To Country Inn & Suites by Carlson,1
+4,383,To Country Inn & Suites by Carlson,1
+4,384,To Country Inn & Suites by Carlson,1
+4,385,To Country Inn & Suites by Carlson,1
+4,386,To Country Inn & Suites by Carlson,1
+4,387,To Country Inn & Suites by Carlson,1
+4,388,To Country Inn & Suites by Carlson,1
+4,389,To Country Inn & Suites by Carlson,1
+4,605,To Country Inn & Suites by Carlson,0
+3,579,To Hotel Avante & Grand Hotel,0
+3,578,To Hotel Avante & Grand Hotel,0
+4,604,To Country Inn & Suites by Carlson,0
+3,573,To Hotel Avante & Grand Hotel,0
+3,572,To Hotel Avante & Grand Hotel,0
+3,571,To Hotel Avante & Grand Hotel,0
+3,570,To Hotel Avante & Grand Hotel,0
+3,577,To Hotel Avante & Grand Hotel,0
+3,576,To Hotel Avante & Grand Hotel,0
+3,575,To Hotel Avante & Grand Hotel,0
+3,574,To Hotel Avante & Grand Hotel,0
+1,60,To Shoreline Amphitheatre,3
+1,61,To Shoreline Amphitheatre,3
+0,258,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",3
+0,259,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",3
+1,64,To Shoreline Amphitheatre,3
+2,65,To Shoreline Amphitheatre,1
+2,66,To Shoreline Amphitheatre,1
+2,67,To Shoreline Amphitheatre,1
+0,252,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+2,69,To Shoreline Amphitheatre,2
+0,250,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,251,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,256,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,257,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,254,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+0,255,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",2
+4,603,To Country Inn & Suites by Carlson,0
+4,602,To Country Inn & Suites by Carlson,0
+0,508,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,509,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,506,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,507,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,504,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,505,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,502,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,503,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,500,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,501,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+5,469,Mountain View Caltrain Loop,0
+5,468,Mountain View Caltrain Loop,0
+5,465,Mountain View Caltrain Loop,0
+5,464,Mountain View Caltrain Loop,0
+5,467,Mountain View Caltrain Loop,0
+5,466,Mountain View Caltrain Loop,0
+9,461,Mineta San José International Airport,3
+9,460,Mineta San José International Airport,3
+5,463,Mountain View Caltrain Loop,0
+5,462,Mountain View Caltrain Loop,0
+5,168,To Mountain View Caltrain,1
+5,169,To Mountain View Caltrain,1
+5,164,To Mountain View Caltrain,1
+5,165,To Mountain View Caltrain,1
+5,166,To Mountain View Caltrain,1
+5,167,To Mountain View Caltrain,1
+5,160,To Mountain View Caltrain,1
+5,161,To Mountain View Caltrain,1
+5,162,To Mountain View Caltrain,1
+5,163,To Mountain View Caltrain,1
+4,600,To Country Inn & Suites by Carlson,0
+0,9,To Shoreline Amphitheatre,2
+3,357,To Hotel Avante & Grand Hotel,1
+3,356,To Hotel Avante & Grand Hotel,1
+3,355,To Hotel Avante & Grand Hotel,1
+3,354,To Hotel Avante & Grand Hotel,1
+3,353,To Hotel Avante & Grand Hotel,1
+3,352,To Hotel Avante & Grand Hotel,1
+3,351,To Hotel Avante & Grand Hotel,1
+3,350,To Hotel Avante & Grand Hotel,1
+3,359,To Hotel Avante & Grand Hotel,2
+3,358,To Hotel Avante & Grand Hotel,2
+5,216,To Mountain View Caltrain,3
+5,217,To Mountain View Caltrain,3
+5,214,To Shoreline Amphitheatre,3
+5,215,To Mountain View Caltrain,3
+5,212,To Shoreline Amphitheatre,3
+5,213,To Shoreline Amphitheatre,3
+5,210,To Shoreline Amphitheatre,3
+5,211,To Shoreline Amphitheatre,3
+5,218,To Mountain View Caltrain,3
+5,219,To Mountain View Caltrain,3
+1,289,"To Avatar Hotel, Plaza Suites",2
+1,288,"To Avatar Hotel, Plaza Suites",2
+0,4,To Shoreline Amphitheatre,1
+1,281,"To Avatar Hotel, Plaza Suites",2
+1,280,"To Avatar Hotel, Plaza Suites",2
+1,283,"To Avatar Hotel, Plaza Suites",2
+1,282,"To Avatar Hotel, Plaza Suites",2
+1,285,"To Avatar Hotel, Plaza Suites",2
+1,284,"To Avatar Hotel, Plaza Suites",2
+1,287,"To Avatar Hotel, Plaza Suites",2
+1,286,"To Avatar Hotel, Plaza Suites",2
+1,263,"To Avatar Hotel, Plaza Suites",1
+1,262,"To Avatar Hotel, Plaza Suites",1
+0,261,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",3
+0,260,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",3
+1,267,"To Avatar Hotel, Plaza Suites",1
+1,266,"To Avatar Hotel, Plaza Suites",1
+1,265,"To Avatar Hotel, Plaza Suites",1
+1,264,"To Avatar Hotel, Plaza Suites",1
+1,269,"To Avatar Hotel, Plaza Suites",1
+1,268,"To Avatar Hotel, Plaza Suites",1
+1,59,To Shoreline Amphitheatre,3
+1,58,To Shoreline Amphitheatre,2
+1,55,To Shoreline Amphitheatre,2
+1,54,To Shoreline Amphitheatre,1
+1,57,To Shoreline Amphitheatre,2
+1,56,To Shoreline Amphitheatre,2
+1,51,To Shoreline Amphitheatre,1
+1,50,To Shoreline Amphitheatre,3
+1,53,To Shoreline Amphitheatre,1
+1,52,To Shoreline Amphitheatre,1
+1,537,"To Avatar Hotel, Plaza Suites",0
+1,536,"To Avatar Hotel, Plaza Suites",0
+1,535,"To Avatar Hotel, Plaza Suites",0
+1,63,To Shoreline Amphitheatre,3
+1,533,"To Avatar Hotel, Plaza Suites",0
+1,532,"To Avatar Hotel, Plaza Suites",0
+1,531,"To Avatar Hotel, Plaza Suites",0
+1,530,"To Avatar Hotel, Plaza Suites",0
+1,539,"To Avatar Hotel, Plaza Suites",0
+1,538,"To Avatar Hotel, Plaza Suites",0
+4,115,To Shoreline Amphitheatre,2
+4,114,To Shoreline Amphitheatre,1
+4,117,To Shoreline Amphitheatre,2
+4,116,To Shoreline Amphitheatre,2
+3,111,To Shoreline Amphitheatre,3
+3,110,To Shoreline Amphitheatre,3
+4,113,To Shoreline Amphitheatre,1
+4,112,To Shoreline Amphitheatre,1
+4,119,To Shoreline Amphitheatre,3
+4,118,To Shoreline Amphitheatre,2
+6,429,"Hyatt Regency Embarcadero, via Millbrae BART",2
+6,428,"Hyatt Regency Embarcadero, via Millbrae BART",2
+1,534,"To Avatar Hotel, Plaza Suites",0
+6,421,"Hyatt Regency Embarcadero, via Millbrae BART",1
+6,420,"Hyatt Regency Embarcadero, via Millbrae BART",1
+6,423,"Hyatt Regency Embarcadero, via Millbrae BART",1
+6,422,"Hyatt Regency Embarcadero, via Millbrae BART",1
+6,425,"Hyatt Regency Embarcadero, via Millbrae BART",1
+6,424,"Hyatt Regency Embarcadero, via Millbrae BART",1
+6,427,"Hyatt Regency Embarcadero, via Millbrae BART",1
+6,426,"Hyatt Regency Embarcadero, via Millbrae BART",1
+2,308,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,309,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+1,300,"To Avatar Hotel, Plaza Suites",3
+2,301,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,302,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,303,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,304,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,305,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,306,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+2,307,"To The Aloft Sunnyvale, Wild Palms Hotel",1
+3,568,To Hotel Avante & Grand Hotel,0
+3,569,To Hotel Avante & Grand Hotel,0
+2,560,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,561,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,562,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,563,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,564,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+2,565,"To The Aloft Sunnyvale, Wild Palms Hotel",0
+3,566,To Hotel Avante & Grand Hotel,0
+3,567,To Hotel Avante & Grand Hotel,0
+0,229,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,228,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,227,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,226,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,225,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,224,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+0,223,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",1
+5,222,To Mountain View Caltrain,3
+5,221,To Mountain View Caltrain,3
+5,220,To Mountain View Caltrain,3
+4,391,To Country Inn & Suites by Carlson,1
+4,390,To Country Inn & Suites by Carlson,1
+5,151,To Shoreline Amphitheatre,1
+5,150,To Shoreline Amphitheatre,1
+5,153,To Shoreline Amphitheatre,1
+5,152,To Shoreline Amphitheatre,1
+5,155,To Shoreline Amphitheatre,1
+5,154,To Shoreline Amphitheatre,1
+5,157,To Shoreline Amphitheatre,1
+5,156,To Shoreline Amphitheatre,1
+5,159,To Mountain View Caltrain,1
+5,158,To Mountain View Caltrain,1
+4,609,To Country Inn & Suites by Carlson,0
+4,608,To Country Inn & Suites by Carlson,0
+4,399,To Country Inn & Suites by Carlson,2
+4,398,To Country Inn & Suites by Carlson,2
+1,48,To Shoreline Amphitheatre,3
+1,49,To Shoreline Amphitheatre,3
+1,46,To Shoreline Amphitheatre,3
+1,47,To Shoreline Amphitheatre,3
+1,44,To Shoreline Amphitheatre,2
+1,45,To Shoreline Amphitheatre,2
+1,42,To Shoreline Amphitheatre,1
+1,43,To Shoreline Amphitheatre,2
+1,40,To Shoreline Amphitheatre,1
+1,41,To Shoreline Amphitheatre,1
+0,5,To Shoreline Amphitheatre,1
+0,489,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+0,488,"To Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, and Palo Alto Caltrain",0
+5,487,Mountain View Caltrain Loop,0
+5,486,Mountain View Caltrain Loop,0
+5,485,Mountain View Caltrain Loop,0
+5,484,Mountain View Caltrain Loop,0
+5,483,Mountain View Caltrain Loop,0
+5,482,Mountain View Caltrain Loop,0
+5,481,Mountain View Caltrain Loop,0
+5,480,Mountain View Caltrain Loop,0
+5,472,Mountain View Caltrain Loop,0
+5,473,Mountain View Caltrain Loop,0
+5,470,Mountain View Caltrain Loop,0
+5,471,Mountain View Caltrain Loop,0
+5,476,Mountain View Caltrain Loop,0
+5,477,Mountain View Caltrain Loop,0
+5,474,Mountain View Caltrain Loop,0
+5,475,Mountain View Caltrain Loop,0
+5,478,Mountain View Caltrain Loop,0
+5,479,Mountain View Caltrain Loop,0

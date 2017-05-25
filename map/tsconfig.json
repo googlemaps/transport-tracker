@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "allowJs": true,
+        "target": "es2016"
+    },
+    "include": [
+        "./js/"
+    ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transport Tracker</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+
+        <div class="top-bar">
+            <span class="io-bus-tracker">Transport Tracker</span>
+            <span class="display-time">6:00 AM, May 17th</span>
+            <span class="google-maps-apis"></span>
+        </div>
+        <div class="cards"></div>
+        <div class="promo-container"></div>
+        <div id="map"></div>
+        <div class="page-marker">
+            <svg>
+                <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+                    <circle id="page-marker-panel-0"
+                        cx="13" cy="13" r="12" stroke="#445A65" stroke-width="2" 
+                        fill="none"/>
+                    <circle id="page-marker-panel-1"
+                        cx="61" cy="13" r="12" stroke="#445A65" stroke-width="2" 
+                        fill="none"/>
+                    <circle id="page-marker-panel-2"
+                        cx="109" cy="13" r="12" stroke="#445A65" stroke-width="2" 
+                        fill="none"/>
+                </g>
+            </svg>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+        <script src="js/index.js"></script>
+        <!-- TODO: Add Google Maps API Key here -->
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=geometry">
+    </script>
+    </body>
+</html>

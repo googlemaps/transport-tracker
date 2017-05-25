@@ -20,11 +20,11 @@ in `/android`, that's installed on Android devices and deployed on the tracked
 vehicles, along with a matching administration UI in `/admin`.
 
 The repo also contains the display side of the system, designed to drive 60"
-LCD TVs. There is `/display-server`, written in Go and running on App Engine,
-which receives the locations reported by the Android app, along with a time
-table provided in GTFS format, and makes regular updates to a Firebase Real Time
-Database. The client in `/display-client` receives the updates from the
-Firebase database and draws them on the LCD TV.
+LCD TVs. There is `/backend`, written in Node.js and running on Google Compute
+Engine, which receives the locations reported by the Android app, along with a
+time table provided in GTFS format, and makes regular updates to a Firebase
+Real Time Database. The client in `/map` receives the updates from the Firebase
+database and draws them on the LCD TV.
 
 ## Getting started
 
@@ -46,12 +46,12 @@ The Android app that resides with each asset to be tracked.
 Once configured, this app keeps its location synced with Firebase, and reports
 on other metrics, such as battery life.
 
-### `display-client`
+### `map`
 
 The public web interface that displays schedule information and asset
 locations.
 
-### `display-server`
+### `backend`
 
 The server-side component that manages the state of the Firebase database.
 

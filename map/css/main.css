@@ -1,0 +1,279 @@
+/*
+ * Copyright 2017 Google Inc. All rights reserved.
+ *
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
+ * file except in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+ * ANY KIND, either express or implied. See the License for the specific language governing
+ * permissions and limitations under the License.
+ */
+html,
+body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+#map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+}
+.page-marker {
+  position: absolute;
+  width: 144px;
+  height: 24px;
+  left: calc(50vw -  72px );
+  bottom: 36px;
+  transition-duration: 1s;
+}
+.page-marker circle.selected {
+  fill: #445A65;
+}
+/*
+ * Top bar
+ */
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background-color: #445A65;
+  z-index: 20;
+}
+.top-bar .io-bus-tracker {
+  position: absolute;
+  top: 24px;
+  left: 36px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.97);
+}
+.top-bar .google-maps-apis {
+  position: absolute;
+  top: 24px;
+  right: 36px;
+  width: 175px;
+  height: 24px;
+  background-image: url(/images/logo_lockup_maps_apis_light.png);
+}
+.top-bar .display-time {
+  position: absolute;
+  top: 24px;
+  width: 160px;
+  left: calc(50vw -  80px );
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.97);
+}
+/*
+ * Promo
+ */
+.promo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.promo {
+  position: absolute;
+  right: 72px;
+  bottom: 72px;
+  width: 500px;
+  height: 208px;
+  background-color: #445A65;
+  box-shadow: 0px 5px 10px #888888;
+}
+.promo .title {
+  position: absolute;
+  left: 18px;
+  top: 21px;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 500;
+  font-size: 15pt;
+  color: #fff;
+}
+.promo .cta {
+  position: absolute;
+  right: 18px;
+  top: 21px;
+}
+.promo .cta a {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 500;
+  font-size: 15pt;
+  color: #fff;
+  text-decoration: none;
+}
+.promo .ticker-position {
+  position: absolute;
+  right: 181.5px;
+  bottom: 21px;
+  height: 12px;
+  width: 137px;
+}
+.promo .content {
+  position: absolute;
+  right: 18px;
+  left: 18px;
+  top: 60px;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 300;
+  font-size: 18pt;
+  color: #fff;
+}
+/*
+ * Card definitions
+ */
+.cards {
+  display: flex;
+  flex-direction: column;
+  transition-duration: 1s;
+  position: absolute;
+  transform: translateZ(0px);
+  z-index: 10;
+}
+.panel {
+  padding-top: 64px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  width: 500px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px #888888;
+  margin-top: 72px;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+.header {
+  height: 104px;
+  position: relative;
+}
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.bus_logo {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 24px;
+  left: 16px;
+}
+.direction {
+  font-size: 16px;
+  position: absolute;
+  left: 96px;
+  top: 19px;
+}
+.dark .direction {
+  color: rgba(255, 255, 255, 0.7);
+}
+.light .direction {
+  color: rgba(0, 0, 0, 0.5);
+}
+.headsign {
+  font-size: 28px;
+  font-weight: 500;
+  position: absolute;
+  left: 96px;
+  top: 42px;
+}
+.dark .headsign {
+  color: rgba(255, 255, 255, 0.97);
+}
+.light .headsign {
+  color: rgba(0, 0, 0, 0.9);
+}
+.leaving-in-label {
+  font-size: 16px;
+  position: absolute;
+  left: 384px;
+  top: 19px;
+}
+.dark .leaving-in-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+.light .leaving-in-label {
+  color: rgba(0, 0, 0, 0.5);
+}
+.leaving-in {
+  font-size: 28px;
+  font-weight: 500;
+  position: absolute;
+  left: 384px;
+  top: 42px;
+}
+.dark .leaving-in {
+  color: rgba(255, 255, 255, 0.97);
+}
+.light .leaving-in {
+  color: rgba(0, 0, 0, 0.9);
+}
+.body .next-in-label {
+  font-size: 16px;
+  position: absolute;
+  left: 384px;
+  bottom: 64px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.body .next-in {
+  font-size: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: 384px;
+  bottom: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.stop-times {
+  width: 80px;
+  margin-right: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.stop-time {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.stop-guide {
+  width: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.stop-names {
+  margin-left: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.stop-name {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.9);
+}

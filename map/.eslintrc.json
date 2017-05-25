@@ -1,0 +1,29 @@
+{
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "rules": {
+        "indent": ["error", 2],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi":  ["error", "always"],
+        "no-cond-assign": ["error", "always"],
+        "no-console": "off",
+        "no-const-assign": "error",
+        "no-this-before-super": "error",
+        "no-undef": "error",
+        "no-unreachable": "error",
+        "no-unused-vars": "error",
+        "constructor-super": "error",
+        "valid-typeof": "error",
+        "valid-jsdoc": "error",
+        "curly": "error",
+        "arrow-parens": ["error", "as-needed"],
+        "arrow-body-style": ["error", "always"]
+    }
+}

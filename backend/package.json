@@ -1,0 +1,43 @@
+{
+  "name": "transport-tracker-server",
+  "version": "1.0.0",
+  "description": "The backend component of the Transport Tracker",
+  "scripts": {
+    "main": "node main.js",
+    "debug": "node --debug-brk main.js",
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha -- -R spec",
+    "generate_paths": "node generate_paths.js",
+    "prettier": "for file in *.js test/*.js; do prettier --write --single-quote --bracket-spacing=false $file; done",
+    "typings": "typings install",
+    "check-updates": "npm-check-updates -u -a && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/googlemaps/transport-tracker.git"
+  },
+  "author": "Brett Morgan <brettmorgan@google.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google/maps": "^0.3.1",
+    "@mapbox/polyline": "^0.2.0",
+    "asyncawait": "^1.0.6",
+    "bluebird": "^3.5.0",
+    "csv-parse": "^1.2.0",
+    "firebase-admin": "^4.2.1",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "mocha": "^3.3.0",
+    "npm-check-updates": "^2.11.0",
+    "prettier": "^1.2.2",
+    "typescript": "^2.3.2",
+    "typings": "^2.1.1"
+  }
+}

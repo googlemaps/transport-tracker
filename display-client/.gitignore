@@ -1,8 +1,0 @@
-# Node.js installed files. Run `npm install` to populate.
-node_modules/
-
-# Visual Studio Code work files.
-.vscode/
-
-# Typing inference files for Visual Studio Code
-typings/

@@ -1,0 +1,31 @@
+{
+  "name": "display-client",
+  "version": "1.0.0",
+  "description": "Transport Tracker web display",
+  "main": "index.js",
+  "scripts": {
+    "main": "gulp serve",
+    "prettier": "prettier --write --single-quote --bracket-spacing=false *.js js/*.js",
+    "typings": "typings install",
+    "check-updates": "npm-check-updates -u -a && npm install",
+    "tsc": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/googlemaps/transport-tracker.git"
+  },
+  "author": "Brett Morgan <brettmorgan@google.com>",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-serve": "^1.4.0",
+    "npm-check-updates": "^2.11.0",
+    "prettier": "^1.2.2",
+    "typescript": "^2.3.2",
+    "typings": "^2.1.1"
+  }
+}

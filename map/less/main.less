@@ -1,0 +1,360 @@
+/*
+ * Copyright 2017 Google Inc. All rights reserved.
+ *
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
+ * file except in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+ * ANY KIND, either express or implied. See the License for the specific language governing
+ * permissions and limitations under the License.
+ */
+ 
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+}
+
+@page-marker-width: 24px * 3 + 36px * 2;
+@page-marker-height: 24px;
+
+.page-marker {
+  position: absolute;
+  width: @page-marker-width;
+  height: @page-marker-height;
+  left: ~"calc(50vw - " @page-marker-width/2 ~")";
+  bottom: 36px;
+  transition-duration: 1s;
+}
+
+.page-marker circle.selected {
+  fill: #445A65;
+}
+
+/*
+ * Top bar
+ */
+
+@top-bar-height: 64px;
+
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: @top-bar-height;
+  background-color: #445A65;
+  z-index: 20;
+}
+
+.top-bar .io-bus-tracker {
+  position: absolute;
+  top: 24px;
+  left: 36px;
+  font-size: 18px;
+  color: rgba(100%,100%,100%,97%);
+}
+
+.top-bar .google-maps-apis {
+  position: absolute;
+  top: 24px;
+  right: 36px;
+  width: 175px;
+  height: 24px;
+  background-image: url(/images/logo_lockup_maps_apis_light.png);
+}
+
+@top-bar-display-time-width: 160px;
+
+.top-bar .display-time {
+  position: absolute;
+  top: 24px;
+  width: @top-bar-display-time-width;
+  left: ~"calc(50vw - " @top-bar-display-time-width/2 ~")";
+  font-size: 18px;
+  color: rgba(100%,100%,100%,97%);
+}
+
+/*
+ * Promo
+ */
+
+@promo-width: 500px;
+@promo-height: 208px;
+@promo-ticker-width: 137px;
+@promo-ticker-height: 12px;
+
+.promo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.promo {
+  position: absolute;
+  right: 72px;
+  bottom: 72px;
+  width: @promo-width;
+  height: @promo-height;
+  background-color: #445A65;
+  box-shadow: 0px 5px 10px #888888;
+
+  .title {
+    position: absolute;
+    left: 18px;
+    top: 21px;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+    color: #fff;
+  }
+
+  .cta {
+    position: absolute;
+    right: 18px;
+    top: 21px;
+    a {
+      font-family: 'Roboto', 'Helvetica', sans-serif;
+      font-weight: 500;
+      font-size: 15pt;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .ticker-position {
+    position: absolute;
+    right: (@promo-width - @promo-ticker-width) / 2;
+    bottom: 21px;
+    height: @promo-ticker-height;
+    width: @promo-ticker-width;
+  }
+
+  .content {
+    position: absolute;
+    right: 18px;
+    left: 18px;
+    top: 60px;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 300;
+    font-size: 18pt;
+    color: #fff;
+  }
+}
+
+
+/*
+ * Card definitions
+ */
+
+@standoff-small: 12px;
+@standoff-medium: 16px;
+@standoff-large: 24px;
+
+@font1-size: 16px;
+@font1-color-light: rgba(0%, 0%, 0%, 50%);
+@font1-color-dark: rgba(100%, 100%, 100%, 70%);
+
+@font2-size: 28px;
+@font2-color-light: rgba(0%, 0%, 0%, 90%);
+@font2-color-dark: rgba(100%, 100%, 100%, 97%);
+
+@header-line1-standoff: @standoff-large - 5px;
+@column1-standoff: 96px;
+
+@header-line2-standoff: @standoff-large + @font1-size + @standoff-small - 5px - 5px;
+@column2-standoff: 384px;
+
+@bus-logo-size: 64px;
+
+@card-width: 500px;
+@card-header-height: 104px;
+@card-margin: 72px;
+
+.cards {
+  display:flex;
+  flex-direction: column;
+  transition-duration: 1s;
+  position: absolute;
+  transform: translateZ(0px);
+  z-index: 10;
+}
+
+.panel {
+  padding-top: @top-bar-height;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: @card-width;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px #888888;
+  margin-top: 72px;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
+.header {
+  height: @card-header-height;
+  position: relative;
+}
+
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.bus_logo {
+  width: @bus-logo-size;
+  height: @bus-logo-size;
+  position: absolute;
+  top: @standoff-large;
+  left: @standoff-medium;
+}
+
+.direction {
+  font-size: @font1-size;
+  position: absolute;
+  left: @column1-standoff;
+  top: @header-line1-standoff;
+}
+
+.dark .direction {
+  color: @font1-color-dark;
+}
+
+.light .direction {
+  color: @font1-color-light;
+}
+
+.headsign {
+  font-size: @font2-size;
+  font-weight: 500;
+  position:absolute;
+  left: @column1-standoff;
+  top: @header-line2-standoff;
+}
+
+.dark .headsign {
+  color: @font2-color-dark;
+}
+
+.light .headsign {
+  color: @font2-color-light;
+}
+
+.leaving-in-label {
+  font-size: @font1-size;
+  position: absolute;
+  left: @column2-standoff;
+  top: @header-line1-standoff;
+}
+
+.dark .leaving-in-label {
+  color: @font1-color-dark;
+}
+
+.light .leaving-in-label {
+  color: @font1-color-light;
+}
+
+.leaving-in {
+  font-size: @font2-size;
+  font-weight: 500;
+  position: absolute;
+  left: @column2-standoff;
+  top: @header-line2-standoff;
+}
+
+.dark .leaving-in {
+  color: @font2-color-dark;
+}
+
+.light .leaving-in {
+  color: @font2-color-light;
+}
+
+.body .next-in-label {
+  font-size: @font1-size;
+  position: absolute;
+  left: @column2-standoff;
+  bottom: @standoff-large + @standoff-small + 28px;
+  color: rgba(0%, 0%, 0%, 50%);
+}
+
+.body .next-in {
+  font-size: @font2-size;
+  font-weight: 400;
+  position: absolute;
+  left: @column2-standoff;
+  bottom: @standoff-large;
+  color: rgba(0%, 0%, 0%, 60%);
+}
+
+.stop-times {
+  width: 80px;
+  margin-right: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.stop-time {
+  font-size: 18px;
+  color: rgba(0%, 0%, 0%, 60%);
+}
+
+.stop-guide {
+  width: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.stop-names {
+  margin-left: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.stop-name {
+  font-size: 18px;
+  color: rgba(0%,0%,0%,90%);
+}
+

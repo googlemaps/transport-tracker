@@ -1,0 +1,11 @@
+route_type,route_id,route_short_name,route_long_name,agency_id,route_color,route_text_color
+3,0,Yellow,"Hilton Garden Inn Palo Alto, Sheraton Palo Alto, Westin, Palo Alto Caltrain",1,FCE444,000000
+3,1,Lime,"Avatar Hotel, Plaza Suites",1,C4E86B,000000
+3,2,Teal,"Aloft Sunnyvale, Wild Palms",1,00C1DE,FFFFFF
+3,3,Orange,"Towneplace, Hotel Avante",1,FFAD00,000000
+3,4,Indigo,Country Inn & Suites,1,0061C8,FFFFFF
+3,5,MTV,Mountain View Caltrain,1,8A8A8D,FFFFFF
+3,6,SF,San Francisco Shuttle,1,EA1D76,FFFFFF
+3,7,,Millbrae BART,1,8A8A8D,FFFFFF
+3,8,SFO,San Francisco Airport,1,8A8A8D,FFFFFF
+3,9,SJC,San José Airport,1,8A8A8D,FFFFFF

@@ -1,0 +1,14 @@
+# Node.js installed files. Run `npm install` to populate.
+node_modules/
+
+# Visual Studio Code work files.
+.vscode/
+
+# Npm debugging information.
+npm-debug.log
+
+# Test coverage generated files. Run `npm run coverage` to generate.
+coverage/
+
+# Typing inference files for Visual Studio Code
+typings/
