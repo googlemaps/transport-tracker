@@ -13,6 +13,9 @@
  * permissions and limitations under the License.
  */
 
+// @ts-check
+/// <reference path="../typings/index.d.ts"/>
+
 /* eslint-disable no-unused-vars, no-shadow-global */
 /* globals google firebase */
 
@@ -96,27 +99,22 @@ class Card {
       case 0:
         return 'Palo Alto';
       case 1:
-        return 'Mtn View & Cupertino';
+        return 'Avatar & Plaza Suites';
       case 2:
-        return 'Sunnyvale';
+        return 'Aloft, Wild Palms';
       case 3:
-        return 'Cupertino';
+        return 'Towneplace, Avante';
       case 4:
+        return 'Country Inn & Suites';
       case 5:
-        return 'Santa Clara';
-      case 6:
-        return 'Sunnyvale, San Jose';
-      case 7:
         return 'Mtn View Caltrain';
-      case 8:
-        return 'Hyatt Regency, SF';
-      case 9:
-        return 'Westin St. Francis, SF';
-      case 10:
+      case 6:
+        return 'SF Shuttle';
+      case 7:
         return 'Millbrae BART';
-      case 11:
+      case 8:
         return 'San Francisco (SFO)';
-      case 12:
+      case 9:
         return "San Jose Int'l (SJC)";
       default:
         return 'Unknown';
@@ -132,42 +130,56 @@ class Card {
     return `#${this.data.route.route_color}`;
   }
 
+  get cardHeight() {
+    return 104 + this.bodyHeight;
+  }
+
+  get bodyHeight() {
+    if (this.data.next_trip) {
+      return this.data.next_trip.stop_info.length * 40 + 24;
+    }
+    return 0;
+  }
+
   get render() {
-    return `
-    <div 
-      class="card ${this.isDark ? 'dark' : 'light'}"
-      style="height: ${this.cardHeight}px"
-      >
-      <div class="header" style="background-color: ${this.color}">
-        <div class="bus_logo">
-          <svg width="64px" height="64px" viewBox="0 0 64 64">
-            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <circle fill="#FFFFFF" cx="32" cy="32" r="32"></circle>
-              <path
-                d="M20.7894737,31.0526316 L43.5263158,31.0526316 L43.5263158,21.5789474 L20.7894737,21.5789474 L20.7894737,31.0526316 Z M40.6842105,42.4210526 C39.1115789,42.4210526 37.8421053,41.1515789 37.8421053,39.5789474 C37.8421053,38.0063158 39.1115789,36.7368421 40.6842105,36.7368421 C42.2568421,36.7368421 43.5263158,38.0063158 43.5263158,39.5789474 C43.5263158,41.1515789 42.2568421,42.4210526 40.6842105,42.4210526 L40.6842105,42.4210526 Z M23.6315789,42.4210526 C22.0589474,42.4210526 20.7894737,41.1515789 20.7894737,39.5789474 C20.7894737,38.0063158 22.0589474,36.7368421 23.6315789,36.7368421 C25.2042105,36.7368421 26.4736842,38.0063158 26.4736842,39.5789474 C26.4736842,41.1515789 25.2042105,42.4210526 23.6315789,42.4210526 L23.6315789,42.4210526 Z M17,40.5263158 C17,42.2025263 17.7389474,43.6905263 18.8947368,44.7326316 L18.8947368,48.1052632 C18.8947368,49.1473684 19.7473684,50 20.7894737,50 L22.6842105,50 C23.7364211,50 24.5789474,49.1473684 24.5789474,48.1052632 L24.5789474,46.2105263 L39.7368421,46.2105263 L39.7368421,48.1052632 C39.7368421,49.1473684 40.5793684,50 41.6315789,50 L43.5263158,50 C44.5684211,50 45.4210526,49.1473684 45.4210526,48.1052632 L45.4210526,44.7326316 C46.5768421,43.6905263 47.3157895,42.2025263 47.3157895,40.5263158 L47.3157895,21.5789474 C47.3157895,14.9473684 40.5326316,14 32.1578947,14 C23.7831579,14 17,14.9473684 17,21.5789474 L17,40.5263158 Z"
-                fill="${this.color}"></path>
-            </g>
-          </svg>
-        </div>
-        <div class="direction">${this.direction}</div>
-        <div class="headsign">${this.headsign}</div>
-        <div class="leaving-in-label">${this.data.leaving_in_label}</div>
-        <div class="leaving-in">${this.data.leaving_in}</div>
-      </div>
-      <div class="body" style="height: ${this.bodyHeight}px">
-        <div class="stop-times">
-          ${this.stopTimes}
-        </div>
-        ${this.stopGuide}
-        <div class="stop-names">
-          ${this.stopNames}
-        </div>
-        <div class="next-in-box">
-          <div class="next-in-label">${this.data.next_in_label}</div>
-          <div class="next-in">${this.data.next_in}</div>
-        </div>
-      </div>
-    </div>`;
+    if (this.data.next_trip) {
+      return `
+        <div 
+          class="card ${this.isDark ? 'dark' : 'light'}"
+          style="height: ${this.cardHeight}px"
+          >
+          <div class="header" style="background-color: ${this.color}">
+            <div class="bus_logo">
+              <svg width="64px" height="64px" viewBox="0 0 64 64">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <circle fill="#FFFFFF" cx="32" cy="32" r="32"></circle>
+                  <path
+                    d="M20.7894737,31.0526316 L43.5263158,31.0526316 L43.5263158,21.5789474 L20.7894737,21.5789474 L20.7894737,31.0526316 Z M40.6842105,42.4210526 C39.1115789,42.4210526 37.8421053,41.1515789 37.8421053,39.5789474 C37.8421053,38.0063158 39.1115789,36.7368421 40.6842105,36.7368421 C42.2568421,36.7368421 43.5263158,38.0063158 43.5263158,39.5789474 C43.5263158,41.1515789 42.2568421,42.4210526 40.6842105,42.4210526 L40.6842105,42.4210526 Z M23.6315789,42.4210526 C22.0589474,42.4210526 20.7894737,41.1515789 20.7894737,39.5789474 C20.7894737,38.0063158 22.0589474,36.7368421 23.6315789,36.7368421 C25.2042105,36.7368421 26.4736842,38.0063158 26.4736842,39.5789474 C26.4736842,41.1515789 25.2042105,42.4210526 23.6315789,42.4210526 L23.6315789,42.4210526 Z M17,40.5263158 C17,42.2025263 17.7389474,43.6905263 18.8947368,44.7326316 L18.8947368,48.1052632 C18.8947368,49.1473684 19.7473684,50 20.7894737,50 L22.6842105,50 C23.7364211,50 24.5789474,49.1473684 24.5789474,48.1052632 L24.5789474,46.2105263 L39.7368421,46.2105263 L39.7368421,48.1052632 C39.7368421,49.1473684 40.5793684,50 41.6315789,50 L43.5263158,50 C44.5684211,50 45.4210526,49.1473684 45.4210526,48.1052632 L45.4210526,44.7326316 C46.5768421,43.6905263 47.3157895,42.2025263 47.3157895,40.5263158 L47.3157895,21.5789474 C47.3157895,14.9473684 40.5326316,14 32.1578947,14 C23.7831579,14 17,14.9473684 17,21.5789474 L17,40.5263158 Z"
+                    fill="${this.color}"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="direction">${this.direction}</div>
+            <div class="headsign">${this.headsign}</div>
+            <div class="leaving-in-label">${this.data.leaving_in_label}</div>
+            <div class="leaving-in">${this.data.leaving_in}</div>
+          </div>
+          <div class="body" style="height: ${this.bodyHeight}px">
+            <div class="stop-times">
+              ${this.stopTimes}
+            </div>
+            ${this.stopGuide}
+            <div class="stop-names">
+              ${this.stopNames}
+            </div>
+            <div class="next-in-box">
+              <div class="next-in-label">${this.data.next_in_label}</div>
+              <div class="next-in">${this.data.next_in}</div>
+            </div>
+          </div>
+        </div>`;
+    }
+    return '';
   }
 
   get stopTimes() {
@@ -363,26 +375,23 @@ function renderPanels(panels) {
 
 function colorToBusMarker(color) {
   switch (color) {
-    case '86D1D8':
-      return '/images/dashboard/busmarker_blue.png';
-    case '445963':
-      return '/images/dashboard/busmarker_gray.png';
-    case '7BB241':
-      return '/images/dashboard/busmarker_green.png';
-    case '5D6ABF':
-      return '/images/dashboard/busmarker_indigo.png';
-    case 'A8D84E':
-      return '/images/dashboard/busmarker_lime.png';
-    case 'FCBBCB':
-      return '/images/dashboard/busmarker_pink.png';
-    case 'FF5151':
-      return '/images/dashboard/busmarker_red.png';
-    case '25C5D9':
-      return '/images/dashboard/busmarker_sf1.png';
-    case 'FF4081':
-      return '/images/dashboard/busmarker_sf2.png';
-    case 'FFC927':
+    case 'FCE444':
       return '/images/dashboard/busmarker_yellow.png';
+    case 'C4E86B':
+      return '/images/dashboard/busmarker_lime.png';
+    case '00C1DE':
+      return '/images/dashboard/busmarker_teal.png';
+    case 'FFAD00':
+      return '/images/dashboard/busmarker_orange.png';
+    case '0061C8':
+      return '/images/dashboard/busmarker_indigo.png';
+    case '8A8A8D':
+      return '/images/dashboard/busmarker_caltrain.png';
+    case 'EA1D76':
+      return '/images/dashboard/busmarker_sf.png';
+    default:
+      console.log(`colorToBusMarker(${color}) not handled`);
+      return '';
   }
 }
 
@@ -501,7 +510,7 @@ function initMap() {
           map: map,
           icon: {
             url,
-            anchor: new google.maps.Point(18, 18)
+            anchor: new google.maps.Point(30, 30) // Bus markers are 60x60 px
           },
           title: bus.route_name,
           optimized: false
@@ -520,7 +529,10 @@ function initMap() {
     promoContainerElement.innerHTML = `
     <div class="promo">
       <div class="title">What's under the hood</div>
-      <img class="ticker-position" height="12" width="137" src="images/promo/ticker-${promo.position}.png"/>
+      <div class="cta">
+        <a href="http://g.co/io/tracker-app">g.co/io/tracker-app</a>
+      </div>
+      <img class="ticker-position" src="images/promo/ticker-${promo.position}.png"/>
       <div class="content">${promo.html}</div>
     </div>
     `;

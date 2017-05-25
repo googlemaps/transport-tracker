@@ -7,7 +7,8 @@
     "main": "gulp serve",
     "prettier": "prettier --write --single-quote --bracket-spacing=false *.js js/*.js",
     "typings": "typings install",
-    "check-updates": "npm-check-updates -u -a && npm install"
+    "check-updates": "npm-check-updates -u -a && npm install",
+    "tsc": "tsc --watch"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,7 @@
     "gulp-serve": "^1.4.0",
     "npm-check-updates": "^2.11.0",
     "prettier": "^1.2.2",
-    "typescript": "^2.3.1",
+    "typescript": "^2.3.2",
     "typings": "^2.1.1"
   }
 }

@@ -96,6 +96,11 @@ body {
  * Promo
  */
 
+@promo-width: 500px;
+@promo-height: 208px;
+@promo-ticker-width: 137px;
+@promo-ticker-height: 12px;
+
 .promo-container {
   position: absolute;
   top: 0;
@@ -107,39 +112,56 @@ body {
 
 .promo {
   position: absolute;
-  right: 32px;
-  bottom: 36px;
-  width: 375px;
-  height: 154px;
+  right: 72px;
+  bottom: 72px;
+  width: @promo-width;
+  height: @promo-height;
   background-color: #445A65;
+  box-shadow: 0px 5px 10px #888888;
+
+  .title {
+    position: absolute;
+    left: 18px;
+    top: 21px;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+    color: #fff;
+  }
+
+  .cta {
+    position: absolute;
+    right: 18px;
+    top: 21px;
+    a {
+      font-family: 'Roboto', 'Helvetica', sans-serif;
+      font-weight: 500;
+      font-size: 15pt;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .ticker-position {
+    position: absolute;
+    right: (@promo-width - @promo-ticker-width) / 2;
+    bottom: 21px;
+    height: @promo-ticker-height;
+    width: @promo-ticker-width;
+  }
+
+  .content {
+    position: absolute;
+    right: 18px;
+    left: 18px;
+    top: 60px;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 300;
+    font-size: 18pt;
+    color: #fff;
+  }
 }
 
-.promo .title {
-  position: absolute;
-  left: 18px;
-  top: 21px;
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-weight: 500;
-  font-size: 12pt;
-  color: #fff;
-}
-
-.promo .ticker-position {
-  position: absolute;
-  right: 18px;
-  top: 21px;
-}
-
-.promo .content {
-  position: absolute;
-  right: 18px;
-  left: 18px;
-  top: 54px;
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-weight: 300;
-  font-size: 15pt;
-  color: #fff;
-}
 
 /*
  * Card definitions
@@ -335,3 +357,4 @@ body {
   font-size: 18px;
   color: rgba(0%,0%,0%,90%);
 }
+

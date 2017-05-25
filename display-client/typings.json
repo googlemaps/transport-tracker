@@ -1,6 +1,6 @@
 {
   "globalDependencies": {
-    "google.maps": "registry:dt/google.maps#3.25.0+20161019131407"
+    "googlemaps": "registry:dt/googlemaps#3.26.0+20170323101541"
   },
   "dependencies": {
     "firebase": "registry:npm/firebase#3.0.5+20160723033700"
