@@ -46,13 +46,16 @@ The Android app that resides with each asset to be tracked.
 Once configured, this app keeps its location synced with Firebase, and reports
 on other metrics, such as battery life.
 
+### `backend`
+
+The server-side component that manages the state of the Firebase database.  For
+a tutorial on this component, please see 
+[Transport Tracker Backend codelab](https://codelabs.developers.google.com/codelabs/transport-tracker-backend/)
+
 ### `map`
 
 The public web interface that displays schedule information and asset
-locations.
-
-### `backend`
-
-The server-side component that manages the state of the Firebase database.
+locations. For a tutorial on this component, please see 
+[Transport Tracker Map codelab](https://codelabs.developers.google.com/codelabs/transport-tracker-map/)
 
 *This is not an official Google product.*
