@@ -1,3 +1,5 @@
+**_NOTE:_**  This demo application is no longer functional as it has multiple dependencies that must be updated.
+
 Google Transport Tracker
 ========================
 
